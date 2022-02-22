@@ -50,3 +50,33 @@ body {
 footer {
     padding: 0 0 0 0;
 }
+
+/* barra de navegação */
+
+.logo-topo {
+    width: 3rem;
+}
+
+/* hero */
+
+.hero {
+    border: #fff solid 1px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-gradient {
+    width: 50%;
+    height: 200px;
+    background-color: var(--blue);
+    position: absolute;
+    right: 0;
+}
+
+.hero h1 {
+    z-index: 1;
+}

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Código Front (https://www.codigofront.com.br/)
+Copyright 2021-2022 Naira Cirino */
+
+:root {
+    /* cores e gradientes */
+    --blue: #0d6efd;
+    --white: #fff;
+    --black: #000;
+    --primary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+    /* tipografia */
+    --corpo-de-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --titulos: ;
+    --subtitulos: ;
+
+    /* comportamento de tela */
+    scroll-behavior: smooth;
+}
+
+/* apagando estilos padrão do navegador */
+
+html, body, ul, li, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* estilos gerais */
+
+body {
+    width: 100%;
+    background: var(--black, #000);
+    color: var(--white, #fff);    
+    font-size: 16px;
+    font-family: var(--corpo-de-texto, sans-serif);
+}
+
+/* footer */
+
+footer {
+    padding: 0 0 0 0;
+}

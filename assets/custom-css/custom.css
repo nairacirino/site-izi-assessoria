@@ -9,6 +9,7 @@ Copyright 2021-2022 Naira Cirino */
     --white: #fff;
     --black: #000;
     --lilas: rgb(137, 84, 185);
+    --roxo: rgb(126, 0, 175);
     --primary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 
     /* tipografia */
@@ -22,7 +23,7 @@ Copyright 2021-2022 Naira Cirino */
 
 /* apagando estilos padrão do navegador */
 
-html, body, ul, li, h1, h2, h3 {
+html, body, ul, li, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -36,12 +37,20 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: var(--roxo) !important;
+}
+
+.active {
+    color: var(--roxo) !important;
+}
+
 /* estilos gerais */
 
 body {
     width: 100%;
     background: var(--black, #000);
-    color: var(--white, #fff);    
+    color: var(--white, #fff);
     font-size: 18px;
     font-family: var(--corpo-de-texto, sans-serif);
 }
@@ -55,7 +64,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-transform: uppercase;
 }
 
@@ -73,6 +82,22 @@ img {
 
 img:hover {
     filter: grayscale(0%);
+}
+
+.mt-6 {
+    margin-top: 5rem;
+}
+
+.pt-8 {
+    padding-top: 3rem;
+}
+
+.mb-6 {
+    margin-bottom: 10rem;
+}
+
+.ms-6 {
+    margin-left: 20rem;
 }
 
 /* footer */
@@ -181,14 +206,11 @@ header {
     border: #fff solid 1px;
 }
 
-.pt-8 {
-    padding-top: 3rem;
-}
-
 .circulo-gradient {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: var(--blue);
     z-index: -1;
+    margin-right: -15px;
 }

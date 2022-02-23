@@ -30,16 +30,16 @@
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
                         <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.jpg"
                             alt="logo da empresa">
                     </a></li>
-                <li><a href="#">Infoblog</a></li>
-                <li><a href="#">O que é Izi</a></li>
-                <li><a href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Infoblog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">O que é Izi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
             </ul>
         </nav>
         <!--fim barra de navegacao expandida-->
@@ -79,41 +79,42 @@
 
     <main>
         <!--3 projetos inicio-->
-        <section class="projetos">
-            <div class="imagens-projetos">
-                <figure>
-                    <a href="">
-                        <img src="" alt=""></a>
-                    <figcaption><a href=""></a></figcaption>
+        <section class="projetos pt-5">
+            <div class="imagens-projetos d-flex justify-content-between">
+                <figure class="col-md-4 md-3 position-relative">
+                    <a href="#" class="projeto-img-esquerda-container">
+                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
+                    <figcaption class="position-absolute bottom-0 pe-5 fw-bold"><a href="">fotografia</a>
+                    </figcaption>
                 </figure>
-                <figure>
-                    <a href="">
-                        <img src="" alt=""></a>
-                    <figcaption><a href=""></a></figcaption>
+                <figure class="col-md-4 position-relative">
+                    <a href="#" class="projeto-img-meio-container">
+                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
+                    <figcaption class="position-absolute bottom-0 pe-5 fw-bold"><a href="">branding</a></figcaption>
                 </figure>
-                <figure>
-                    <a href="">
-                        <img src="" alt=""></a>
-                    <figcaption><a href=""></a></figcaption>
+                <figure class="col-md-4 position-relative">
+                    <a href="#" class="projeto-img-direita-container">
+                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
+                    <figcaption class="position-absolute bottom-0 pe-5 fw-bold"><a href="">social media</a>
+                    </figcaption>
                 </figure>
             </div>
-            <div class="titulos-projeto">
+            <div class="margem-padrao titulos-projeto d-flex justify-content-between align-items-end">
                 <h2>Projetos</h2>
-                <a href="">portfolio completo</a>
+                <a class="pb-1" href="">portfolio completo</a>
             </div>
         </section>
         <!--fim projetos-->
 
         <!--4 video institucional inicio-->
-        <section class="video">
-            <h2 class="hidden">
+        <section class="video position-relative embed-responsive embed-responsive-21by9 vw-100 mw-100">
+            <h2 class="position-absolute">
                 video institucional
             </h2>
-            <a href="">
-                <video>
-                    <source src="" type="">
-                </video>
-            </a>
+            <iframe class="embed-responsive-item w-100 mw-10" src="./assets/media/video/video.mp4" allowfullscreen>
+            </iframe>
+            <video width="100px" height="100px">
+                <source src="./assets/media/video/video.mp4" type="video/mp4"></video>
         </section>
         <!--fim video institucional-->
 

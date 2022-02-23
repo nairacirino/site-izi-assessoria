@@ -14,8 +14,6 @@ Copyright 2021-2022 Naira Cirino */
 
     /* tipografia */
     --corpo-de-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --titulos: ;
-    --subtitulos: ;
 
     /* comportamento de tela */
     scroll-behavior: smooth;

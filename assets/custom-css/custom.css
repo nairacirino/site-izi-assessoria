@@ -174,3 +174,13 @@ header {
 .titulos-projeto h2 {
     text-transform: uppercase;
 }
+
+/* video */
+
+.video {
+    height: 100px;
+}
+
+.video-item {
+    max-height: 100px;
+}

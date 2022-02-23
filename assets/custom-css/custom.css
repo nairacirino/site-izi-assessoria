@@ -8,6 +8,7 @@ Copyright 2021-2022 Naira Cirino */
     --blue: #0d6efd;
     --white: #fff;
     --black: #000;
+    --lilas: rgb(137, 84, 185);
     --primary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 
     /* tipografia */
@@ -21,7 +22,7 @@ Copyright 2021-2022 Naira Cirino */
 
 /* apagando estilos padrão do navegador */
 
-html, body, ul, li, h1 {
+html, body, ul, li, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -45,6 +46,34 @@ body {
     font-family: var(--corpo-de-texto, sans-serif);
 }
 
+a {
+    color: inherit !important;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.margem-padrao {
+    margin: 0 3rem 0 3rem;
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
 /* footer */
 
 footer {
@@ -55,6 +84,11 @@ footer {
 
 .logo-topo {
     width: 3rem;
+}
+
+header {
+    text-transform: uppercase;
+    background-color: var(--black);
 }
 
 /* hero */
@@ -85,4 +119,58 @@ footer {
 
 .hero h1 {
     z-index: 1;
+    text-transform: uppercase;
+}
+
+/* projetos */
+
+.projetos {
+    border: #fff solid 1px;
+    height: 99vh;
+}
+
+@media (max-width: 767px) {
+    .projetos {
+        height: 92vh;
+    }
+}
+
+.projetos figcaption {
+    background-color: var(--lilas);
+    font-size: 1.2em;
+}
+
+.projetos figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.projeto-img {
+    width: 100%;
+}
+
+.projeto-img-esquerda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 98%;
+}
+
+.projeto-img-meio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+}
+
+.projeto-img-direita-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 98%;
+}
+
+.titulos-projeto h2 {
+    text-transform: uppercase;
 }

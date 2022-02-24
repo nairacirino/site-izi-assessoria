@@ -17,6 +17,7 @@ Copyright 2021-2022 Naira Cirino */
 
     /* comportamento de tela */
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /* apagando estilos padrão do navegador */
@@ -99,6 +100,10 @@ img:hover {
     margin-top: 10rem;
 }
 
+.mt-20 {
+    margin-top: 20rem;
+}
+
 .pt-8 {
     padding-top: 3rem;
 }
@@ -117,6 +122,10 @@ img:hover {
 
 .me-7 {
     margin-right: 8rem;
+}
+
+.vh-50 {
+    height: 70vh !important;
 }
 
 /* footer */
@@ -218,10 +227,6 @@ header {
 
 /* infoblog */
 
-section {
-    border: #fff solid 1px;
-}
-
 .circulo-gradient {
     width: 200px;
     height: 200px;
@@ -257,4 +262,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.servicos h3 {
+    text-transform: uppercase;
 }

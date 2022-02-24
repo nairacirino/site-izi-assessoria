@@ -17,7 +17,6 @@ Copyright 2021-2022 Naira Cirino */
 
     /* comportamento de tela */
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 /* apagando estilos padrão do navegador */
@@ -110,6 +109,10 @@ img:hover {
 
 .mb-6 {
     margin-bottom: 10rem;
+}
+
+.mb-7 {
+    margin-bottom: 5rem;
 }
 
 .ms-6 {
@@ -265,5 +268,11 @@ header {
 }
 
 .servicos h3 {
+    text-transform: uppercase;
+}
+
+/* projetos */
+
+.projetos h3 {
     text-transform: uppercase;
 }

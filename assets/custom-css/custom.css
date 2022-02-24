@@ -59,6 +59,7 @@ a {
 
 h1 {
     font-size: 4rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -86,6 +87,18 @@ img:hover {
     margin-top: 5rem;
 }
 
+.mt-7 {
+    margin-top: 6rem;
+}
+
+.mt-8 {
+    margin-top: 7rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
 .pt-8 {
     padding-top: 3rem;
 }
@@ -96,6 +109,14 @@ img:hover {
 
 .ms-6 {
     margin-left: 20rem;
+}
+
+.me-6 {
+    margin-right: 7rem;
+}
+
+.me-7 {
+    margin-right: 8rem;
 }
 
 /* footer */
@@ -118,7 +139,6 @@ header {
 /* hero */
 
 .hero {
-    border: #fff solid 1px;
     position: relative;
     height: 99vh;
     display: flex;
@@ -143,13 +163,11 @@ header {
 
 .hero h1 {
     z-index: 1;
-    text-transform: uppercase;
 }
 
 /* projetos */
 
 .projetos {
-    border: #fff solid 1px;
     height: 99vh;
 }
 
@@ -200,7 +218,7 @@ header {
 
 /* infoblog */
 
-.infoblog {
+section {
     border: #fff solid 1px;
 }
 
@@ -211,4 +229,32 @@ header {
     background-color: var(--blue);
     z-index: -1;
     margin-right: -15px;
+}
+
+/* servicos*/
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }

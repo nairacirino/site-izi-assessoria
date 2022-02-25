@@ -134,7 +134,7 @@ img:hover {
 /* footer */
 
 footer {
-    padding: 0 0 0 0;
+    padding: 0 0 3rem 0;
 }
 
 /* barra de navegação */
@@ -275,4 +275,11 @@ header {
 
 .projetos h3 {
     text-transform: uppercase;
+}
+
+/* artigo */
+
+.artigo-bg {
+    background: var(--blue);
+    height: 12rem;
 }

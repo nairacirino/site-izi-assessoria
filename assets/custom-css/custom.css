@@ -71,6 +71,10 @@ h3 {
     font-size: 2rem;
 }
 
+.big-p {
+    font-size: 1.5rem;
+}
+
 .margem-padrao {
     margin: 0 3rem 0 3rem;
 }
@@ -129,6 +133,23 @@ img:hover {
 
 .vh-50 {
     height: 70vh !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.purple {
+    color: var(--roxo);
+}
+
+label, input, button {
+    display: block;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 100%;
 }
 
 /* footer */

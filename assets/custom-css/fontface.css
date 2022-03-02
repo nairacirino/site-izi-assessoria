@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Coolvetica Compressed Hv';
+    src: url('../fontes/coolvetica\ compressed\ hv.otf') format('opentype');
+    font-weight: 900;
+    font-style: oblique;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Condensed Rg';
+    src: url('../fontes/coolvetica\ condensed\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: oblique;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../fontes/BAHNSCHRIFT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Crammed Rg';
+    src: url('../fontes/coolvetica\ crammed\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: oblique;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('../fontes/coolvetica\ rg\ it.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('../fontes/coolvetica\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

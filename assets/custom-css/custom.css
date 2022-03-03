@@ -354,6 +354,14 @@ header {
     text-transform: uppercase;
 }
 
+.quero-proposta {
+    border-bottom: 3px solid var(--blue);
+}
+
+.mais-projetos {
+    border-bottom: 3px solid var(--roxo);
+}
+
 /* home projetos */
 
 .projetos h3 {

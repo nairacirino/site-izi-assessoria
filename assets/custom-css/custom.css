@@ -73,15 +73,15 @@ h3 {
 }
 
 .lg-p {
-    font-size: clamp (1rem, 1.2rem, 1.2rem);
+    font-size: clamp (1.1rem, 1.2rem, 1.2rem);
 }
 
 .big-p {
-    font-size: (1.2rem, 1.5rem, 1.5rem);
+    font-size: (1.3rem, 1.5rem, 1.5rem);
 }
 
 .bigger-p {
-    font-size: (1.5rem, 1.8rem, 1.8rem);
+    font-size: (1.6rem, 1.8rem, 1.8rem);
 }
 
 .margem-padrao {

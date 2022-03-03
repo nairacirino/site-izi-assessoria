@@ -28,7 +28,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header class="fixed-top mt-4 mb-10">
+    <header id="navbar" class="fixed-top pt-4 mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -39,9 +39,9 @@
                         <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.jpg"
                             alt="logo da empresa">
                     </a></li>
-                <li class="nav-item"><a class="nav-link active" href="infoblog.html">Infoblog</a></li>
+                <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato·html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
             </ul>
         </nav>
         <!--fim barra de navegacao expandida-->
@@ -71,10 +71,10 @@
     <!--fim barra de navegação-->
 
     <!--2 artigo inicio-->
-    <header>
+    <header class="margem-hero">
         <div class="vh-100 d-flex flex-column justify-content-center">
             <div class="artigo-bg d-flex flex-column justify-content-center">
-                <h1 class="col-md-10 margem-padrao text-end">VAMOS CONSTRUIR<br>ALGO JUNTOS!</h1>
+                <h1 class="contato-header col-md-10 text-end">VAMOS CONSTRUIR<br>ALGO JUNTOS!</h1>
             </div>
         </div>
     </header>
@@ -82,9 +82,9 @@
     <main class="margem-padrao">
         <h3>Não precisa ser um bicho de sete cabeças,</h3>
         <h3>deixa que <span class="purple">cuidamos disso pra você</span></h3>
-        <p class="mt-5 big-p">Nos conte mais sobre você e o projeto:</p>
+        <p class="mt-5 bigger-p">Nos conte mais sobre você e o projeto:</p>
         <fieldset class="mt-6">
-            <form action="">
+            <form action="" class="">
                 <label for="">Qual seu nome?</label>
                 <input type="text">
                 
@@ -103,31 +103,31 @@
                 <label class="mt-5" for="">Quais soluções você está procurando?</label>
                 <input type="text">
                 
-                <button class="mt-8">ENVIAR</button>
+                <button class="mt-8 enviar-btn bigger-p">ENVIAR</button>
             </form>
         </fieldset>
     </main>
     <!--4 cta inicio-->
     <div class="d-flex justify-content-center align-items-center">
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
-            <h2 class="text-center">ESTAMOS ANIMADOS PARA<br>
-                COMEÇAR ESSA PARCERIA</h2>
+            <h1 class="text-center margem-padrao">ESTAMOS ANIMADOS PARA<br>
+                COMEÇAR ESSA PARCERIA!</h1>
         </div>
     </div>
     <!--cta fim-->
     </section>
 
-    <!--5 rodapé inicio-->
+    <!--8 rodapé inicio-->
     <footer class="margem-padrao">
         <p>contato@iziassessoria.com</p>
         <p>São Paulo - SP</p>
         <small>Todos os direitos reservados*</small>
         <nav>
-            <ul>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
+            <ul class="d-flex mt-2">
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </nav>
     </footer>

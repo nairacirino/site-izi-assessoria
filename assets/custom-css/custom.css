@@ -124,6 +124,10 @@ img:hover {
     padding-top: 3rem;
 }
 
+.pt-6 {
+    padding-top: 5rem;
+}
+
 .mb-6 {
     margin-bottom: 10rem;
 }
@@ -352,12 +356,31 @@ header {
 /* artigo */
 
 .artigo-bg {
-    background: var(--blue);
-    height: 12rem;
+    background: linear-gradient(90deg, rgba(159,12,132,1) 0%, rgba(167,44,219,1) 35%, rgba(54,107,183,1) 100%);
+    height: 14rem;
+}
+
+.artigos h3 {
+    text-transform: uppercase;
 }
 
 /* projetos cta */
 
 .projetos-cta {
     margin-top: 35rem;
+}
+
+/* contato */
+
+.contato-header {
+    line-height: calc(2rem + 2.5vw);
+    padding: 5rem 0 7rem 0;
+    margin-right: calc(2rem + 2.5vw);
+}
+
+.enviar-btn {
+    padding: 0 3rem 0 3rem;
+    border: none;
+    background-color: var(--roxo);
+    color: var(--white);
 }

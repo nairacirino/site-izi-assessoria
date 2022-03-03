@@ -59,12 +59,12 @@ a {
 }
 
 h1 {
-    font-size: calc(2.5rem + 2.5vw);
+    font-size: clamp(3rem calc(2.5rem + 2.5vw) 80vw);
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: calc(3.5rem + 3.5vw);
+    font-size: clamp(5rem calc(3.5rem + 3.5vw) 90vw);
     text-transform: uppercase;
 }
 

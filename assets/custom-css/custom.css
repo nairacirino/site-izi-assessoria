@@ -72,6 +72,10 @@ h3 {
     font-size: calc(1.5rem + 2vw);
 }
 
+.lg-p {
+    font-size: 1.2rem;
+}
+
 .big-p {
     font-size: 1.5rem;
 }

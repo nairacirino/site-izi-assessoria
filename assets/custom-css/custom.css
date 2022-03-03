@@ -5,15 +5,17 @@ Copyright 2021-2022 Naira Cirino */
 
 :root {
     /* cores e gradientes */
-    --blue: #0d6efd;
+    --blue: #366BB7;
     --white: #fff;
     --black: #000;
-    --lilas: rgb(137, 84, 185);
-    --roxo: rgb(126, 0, 175);
-    --primary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --lilas: #A72CDB;
+    --roxo: #9F0C84;
+    --primary-gradient: linear-gradient(90deg, rgba(159,12,132,1) 0%, rgba(167,44,219,1) 50%, rgba(54,107,183,1) 100%);
 
     /* tipografia */
-    --corpo-de-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --corpo-de-texto: 'Coolvetica Rg', sans-serif;
+    --navegacao: 'Coolvetica Condensed Rg', sans-serif;
+    font-size: 20px;
 
     /* comportamento de tela */
     scroll-behavior: smooth;
@@ -21,7 +23,7 @@ Copyright 2021-2022 Naira Cirino */
 
 /* apagando estilos padrão do navegador */
 
-html, body, ul, li, h1, h2, h3, p {
+html, body, ul, li, h1, h2, h3, p, figcaption {
     margin: 0;
     padding: 0;
 }
@@ -49,7 +51,6 @@ body {
     width: 100%;
     background: var(--black, #000);
     color: var(--white, #fff);
-    font-size: 18px;
     font-family: var(--corpo-de-texto, sans-serif);
 }
 
@@ -58,25 +59,33 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: calc(2.5rem + 2.5vw);
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: calc(3.5rem + 3.5vw);
     text-transform: uppercase;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: calc(1.5rem + 2vw);
 }
 
 .big-p {
     font-size: 1.5rem;
 }
 
+.bigger-p {
+    font-size: 1.8rem;
+}
+
 .margem-padrao {
     margin: 0 3rem 0 3rem;
+}
+
+.margem-hero {
+    margin-top: 10vh;
 }
 
 img {
@@ -152,16 +161,36 @@ input {
     width: 100%;
 }
 
+.nav-link {
+    font-family: var(--navegacao) !important;
+    font-size: calc(1.1rem + 0.8vw);
+}
+
 /* footer */
 
 footer {
     padding: 0 0 3rem 0;
 }
 
+.social-bg {
+    background-color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    text-decoration: none;
+    color: var(--black);
+}
+
 /* barra de navegação */
 
 .logo-topo {
-    width: 3rem;
+    width: calc(3rem + 2.5vw);
 }
 
 header {
@@ -188,8 +217,8 @@ header {
 
 .square-gradient {
     width: 50%;
-    height: 200px;
-    background-color: var(--blue);
+    height: 300px;
+    background: linear-gradient(90deg, rgba(159,12,132,1) 0%, rgba(167,44,219,1) 35%, rgba(54,107,183,1) 100%);
     position: absolute;
     right: 0;
 }
@@ -198,7 +227,7 @@ header {
     z-index: 1;
 }
 
-/* projetos */
+/* home projetos */
 
 .projetos {
     height: 99vh;
@@ -210,9 +239,9 @@ header {
     }
 }
 
-.projetos figcaption {
+.projetos figcaption a {
     background-color: var(--lilas);
-    font-size: 1.2em;
+    font-size: calc(0.8rem + 1vw);
 }
 
 .projetos figure {
@@ -246,21 +275,35 @@ header {
     width: 98%;
 }
 
-/* video */
+.pb-1 {
+    font-size: 1.1rem;
+}
+
+/* home video */
 
 
-/* infoblog */
+/* home infoblog */
 
 .circulo-gradient {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    background-color: var(--blue);
+    background: linear-gradient(25deg, rgba(21,0,25,1) 19%, rgba(103,7,86,1) 74%, rgba(37,73,125,1) 96%);
     z-index: -1;
     margin-right: -15px;
 }
 
+/* home cta */
+
+.tres-linhas h3 {
+    text-transform: uppercase;
+}
+
 /* servicos*/
+
+.servicos {
+    margin-top: 13rem;
+}
 
 .wrap {
     display: flex;
@@ -292,7 +335,11 @@ header {
     text-transform: uppercase;
 }
 
-/* projetos */
+/* home projetos */
+
+.projetos {
+    margin-top: 13rem;
+}
 
 .projetos h3 {
     text-transform: uppercase;
@@ -303,4 +350,10 @@ header {
 .artigo-bg {
     background: var(--blue);
     height: 12rem;
+}
+
+/* projetos cta */
+
+.projetos-cta {
+    margin-top: 35rem;
 }

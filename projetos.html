@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.css">
-        <!--font-face css-->
-        <link rel="stylesheet" href="./assets/custom-css/fontface.css">
+    <!--font-face css-->
+    <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
     <!--fontawesome icons-->
@@ -28,7 +28,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header class="fixed-top mt-4 mb-10">
+    <header id="navbar" class="fixed-top pt-4 mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -71,20 +71,24 @@
     <!--fim barra de navegação-->
 
     <!--2 projetos inicio-->
-    <main class="projetos mt-10">
-        <h1 class="mb-6 margem-padrao">Projetos</h1>
+    <main class="projetos">
+        <div class="vh-50">
+            <h2 class="mb-6 margem-padrao">Projetos</h2>
+        </div>
         <!--projeto 1-->
         <div class="wrap-projetos mb-1">
-            <h3 class="text-center mb-7">fotografia</h3>
+            <h3 class="text-center">fotografia</h3>
+            <p class="text-center mb-7">abrir mais</p>
             <!--fileira-->
-            <div class="bloco d-flex">
+            <div class="bloco d-flex justify-content-between">
                 <!--item-->
                 <div class="item col-md-4">
                     <a href="" class="projeto-img-esquerda-container">
                         <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
                     </a>
                     <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit itaque et,
+                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
+                        itaque et,
                         laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
                         aliquam
                         temporibus quod veniam expedita quidem?</p>
@@ -93,10 +97,11 @@
                 <!--item-->
                 <div class="item col-md-4">
                     <a href="" class="projeto-img-meio-container">
-                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt="">
+                        <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
                     </a>
                     <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit itaque et,
+                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
+                        itaque et,
                         laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
                         aliquam
                         temporibus quod veniam expedita quidem?</p>
@@ -105,10 +110,11 @@
                 <!--item-->
                 <div class="item col-md-4">
                     <a href="" class="projeto-img-direita-container">
-                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt="">
+                        <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
                     </a>
                     <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit itaque et,
+                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
+                        itaque et,
                         laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
                         aliquam
                         temporibus quod veniam expedita quidem?</p>
@@ -121,28 +127,28 @@
     <!--fim servicos-->
 
 
-    <section class="cta-contato margem-padrao mt-20">
+    <section class="projetos-cta margem-padrao vh-100">
         <h2 class="d-none">contato</h2>
         <!--3 cta inicio-->
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column mt-5">
-            <p>Juntos vamos entender e estudar <br> oportunidades e obstáculos para <br> alcançar os objetivos
+            <p class="big-p">Juntos vamos entender e estudar <br> oportunidades e obstáculos para <br> alcançar os objetivos
                 previstos.</p>
-            <a class="mt-2 ms-6" href="#">Bora conversar?</a>
+            <a class="mt-2 ms-6 bigger-p" href="#">Bora conversar?</a>
         </div>
         <!--cta fim-->
     </section>
 
-    <!--5 rodapé inicio-->
+    <!--8 rodapé inicio-->
     <footer class="margem-padrao">
         <p>contato@iziassessoria.com</p>
         <p>São Paulo - SP</p>
         <small>Todos os direitos reservados*</small>
         <nav>
-            <ul>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
+            <ul class="d-flex mt-2">
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </nav>
     </footer>

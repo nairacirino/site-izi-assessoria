@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.css">
-        <!--font-face css-->
-        <link rel="stylesheet" href="./assets/custom-css/fontface.css">
+    <!--font-face css-->
+    <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
     <!--fontawesome icons-->
@@ -28,7 +28,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header class="fixed-top mt-4 mb-10">
+    <header id="navbar" class="fixed-top pt-4 mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -71,8 +71,10 @@
     <!--fim barra de navegação-->
 
     <!--2 servicos inicio-->
-    <main class="servicos mt-10">
-        <h1 class="mb-6 margem-padrao">Serviços</h1>
+    <main class="servicos">
+        <div class="vh-50">
+            <h2 class="margem-padrao">Serviços</h2>
+        </div>
 
         <!--item individual-->
         <div class="texto-servicos d-flex justify-content-end" id="texto-sobe">
@@ -107,7 +109,7 @@
 
     <section class="cta-contato margem-padrao mt-20">
         <!--3 conheca inicio-->
-        <div class="d-flex justify-content-center flex-column mt-10">
+        <div class="d-flex justify-content-center flex-column mt-10 margem-padrao">
             <a href="#">
                 <h3>Conheça</h3>
                 <h2>Nossos Projetos</h2>
@@ -116,25 +118,26 @@
         <!--fim conheca-->
 
         <!--4 cta inicio-->
-        <div class="contato-link vh-50 d-flex align-items-center justify-content-center flex-column">
-            <p>Juntos vamos entender e estudar <br> oportunidades e obstáculos para <br> alcançar os objetivos
+        <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
+            <p class="big-p">Juntos vamos entender e estudar <br> oportunidades e obstáculos para <br> alcançar os
+                objetivos
                 previstos.</p>
-            <a class="mt-2 ms-6" href="#">Bora conversar?</a>
+            <a class="mt-2 ms-6 bigger-p" href="#">Bora conversar?</a>
         </div>
         <!--cta fim-->
     </section>
 
-    <!--5 rodapé inicio-->
+    <!--8 rodapé inicio-->
     <footer class="margem-padrao">
         <p>contato@iziassessoria.com</p>
         <p>São Paulo - SP</p>
         <small>Todos os direitos reservados*</small>
         <nav>
-            <ul>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
-                <li><a href="#" class="social-bg"></a></li>
+            <ul class="d-flex mt-2">
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </nav>
     </footer>

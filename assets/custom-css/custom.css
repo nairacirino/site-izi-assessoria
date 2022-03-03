@@ -175,7 +175,7 @@ input {
 
 .nav-link {
     font-family: var(--navegacao) !important;
-    font-size: calc(1.1rem + 0.8vw);
+    font-size: calc(0.8rem + 1.2vw);
 }
 
 /* footer */

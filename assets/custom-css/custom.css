@@ -238,12 +238,12 @@ header {
 /* home projetos */
 
 .projetos {
-    height: 99vh;
+    min-height: 99vh;
 }
 
 @media (max-width: 767px) {
     .projetos {
-        height: 92vh;
+        min-height: 92vh;
     }
 }
 
@@ -287,6 +287,13 @@ header {
     font-size: 1.1rem;
 }
 
+.underline-hover {
+    border-bottom: 3px solid var(--blue);
+    bottom: 7px;
+    right: 0px;
+    color: rgba(0, 0, 0, 0);
+}
+
 /* home video */
 
 
@@ -313,7 +320,7 @@ header {
     margin-top: 13rem;
 }
 
-.wrap {
+.wrap-div {
     display: flex;
     flex-direction: row;
     align-items: flex-start;

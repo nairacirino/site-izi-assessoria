@@ -306,6 +306,10 @@ header {
 
 /* home video */
 
+.video-div {
+    height: 400px; 
+    overflow: hidden;
+}
 
 /* home infoblog */
 
@@ -459,6 +463,18 @@ header {
         margin-top: 3vh;
     }
 
+    .home-projetos-xs {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .titulos-projeto-xs {
+        margin-bottom: 2rem;
+    }
+
+    .video-div {
+        height: auto;
+    }
 }
 
 /* sm devices */

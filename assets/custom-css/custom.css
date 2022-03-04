@@ -417,6 +417,10 @@ header {
 
 @media (max-width: 576px) {
 
+    h1, h2 {
+        text-align: center;
+    }
+
     .wrap-div {
         justify-content: center;
     }
@@ -475,6 +479,16 @@ header {
     .video-div {
         height: 250px;
         margin-bottom: 2rem;
+    }
+
+    .servicos h2 {
+        font-size: clamp(3rem, calc(3.5rem + 3.5vw), 70px);
+        text-transform: uppercase;
+    }
+
+    .servicos-cta-titulo {
+        font-size: clamp(3rem, calc(3.5rem + 3.5vw), 70px);
+        text-transform: uppercase;
     }
 }
 

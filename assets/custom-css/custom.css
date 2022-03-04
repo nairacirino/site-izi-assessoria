@@ -473,7 +473,7 @@ header {
     }
 
     .video-div {
-        height: auto;
+        height: 210px;
         margin-bottom: 2rem;
     }
 }

@@ -455,6 +455,10 @@ header {
         margin-bottom: 1rem;
     }
 
+    .margem-hero {
+        margin-top: 7vh;
+    }
+
 }
 
 /* sm devices */

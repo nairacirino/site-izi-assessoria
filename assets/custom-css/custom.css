@@ -498,6 +498,11 @@ header {
     .texto-desce-p {
         margin-right: 0 !important;
     }
+
+    .infoblog-hero-sm {
+        font-size: clamp(3rem, calc(3.5rem + 3.5vw), 60px);
+        text-transform: uppercase;
+    }
 }
 
 /* sm devices */
@@ -543,6 +548,19 @@ header {
 
     .mais-projetos, .div1 {
         margin: 0 !important;
+    }
+
+    .infoblog-hero-sm {
+        text-align: start !important;
+    }
+
+    .artigo-texto-sm {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .cta-contato {
+        margin-top: 0 !important;
     }
 }
 

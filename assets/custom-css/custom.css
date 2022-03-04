@@ -490,6 +490,7 @@ header {
         font-size: clamp(3rem, calc(3.5rem + 3.5vw), 70px);
         text-transform: uppercase;
     }
+
 }
 
 /* sm devices */
@@ -508,8 +509,41 @@ header {
         color: var(--roxo) !important;
     }
 
+    #texto-sobe {
+        display: none !important;
+    }
+
+    #texto-desce {
+        margin-bottom: 2rem !important;
+        margin-top: 1rem;
+        text-align: justify;
+    }
+
+    .wrap-div {
+        justify-content: flex-start !important;
+    }
+
+    .wrap-div h3 {
+        text-align: center !important;
+        margin-bottom: 1rem;
+    }
+
+    .div3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mais-projetos, .div1 {
+        margin: 0 !important;
+    }
 }
 
 /* md devices */
 
-@media (max-width: 991px) {}
+@media (min-width: 768px) {
+    #texto-desce {
+        display: none !important;
+    }
+
+}

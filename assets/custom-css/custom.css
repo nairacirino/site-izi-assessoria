@@ -469,6 +469,10 @@ header {
         font-size: 2rem;
     }
 
+    .dropdown i:hover, .dropdown i:focus, .dropdown i:checked, .dropdown i:active {
+        color: var(--roxo) !important;
+    }
+
 }
 
 /* md devices */

@@ -26,7 +26,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #000;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3457,17 +3457,17 @@ textarea.form-control-lg {
   position: absolute;
   z-index: 1000;
   display: none;
-  min-width: 10rem;
+  min-width: 100vw;
+  min-height: 90vh;
   padding: 0.5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
+  margin-top: 1rem !important;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  color: var(--bs-white);
+  text-align: center;
   list-style: none;
-  background-color: #fff;
+  background-color: var(--bs-dark);
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3665,21 +3665,21 @@ textarea.form-control-lg {
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: var(--bs-white) !important;
   text-align: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #1e2125;
-  background-color: #e9ecef;
+  color: var(--bs-white) !important;
+  background: linear-gradient(90deg, rgba(159, 12, 132, 1) 0%, rgba(167, 44, 219, 1) 35%, rgba(54, 107, 183, 1) 100%);
 }
 .dropdown-item.active, .dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: #0d6efd;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: linear-gradient(90deg, rgb(100, 7, 83) 0%, rgb(98, 24, 129) 35%, rgb(30, 59, 100) 100%);
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;

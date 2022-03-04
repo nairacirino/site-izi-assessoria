@@ -454,16 +454,40 @@ header {
         text-align: center !important;
         margin-bottom: 1rem;
     }
+
+    .dropdown-menu .show {
+        position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    width: 100vw;
+    transform: translate3d(0px, 62px, 0px);
+    }
 }
 
 /* sm devices */
 
 @media (max-width: 767px) {
-    
+    .logo-topo {
+        padding: 0 !important;
+    }
+
+    .dropdown i {
+        color: var(--white) !important;
+        font-size: 2rem;
+    }
+
+    .dropdown-menu .show {
+        position: absolute !important;
+        inset: 0px auto auto 0px !important;
+        margin: 0px !important;
+        width: 100vw !important;
+        top: 80px !important;
+    }
+
 }
 
 /* md devices */
 
 @media (max-width: 991px) {
-    
+
 }

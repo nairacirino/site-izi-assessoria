@@ -562,6 +562,10 @@ header {
     .cta-contato {
         margin-top: 0 !important;
     }
+
+    .artigo-bg .bigger-p {
+        font-size: 1.3rem;
+    }
 }
 
 /* md devices */

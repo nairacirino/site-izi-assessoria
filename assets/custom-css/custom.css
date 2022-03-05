@@ -567,6 +567,19 @@ header {
         font-size: 1.3rem;
         text-align: center;
     }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .animados h1 {
+        font-size: clamp(44px, calc(2.5rem + 2.5vw), 87px);
+    }
+
+    .contato-animado {
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+    }
 }
 
 /* md devices */

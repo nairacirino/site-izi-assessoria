@@ -200,6 +200,15 @@ footer {
     align-items: center;
 }
 
+.social-bg:hover {
+    background-color: var(--roxo);
+    color: var(--white);
+}
+
+.social-bg:hover i {
+    color: var(--white);
+}
+
 i {
     text-decoration: none;
     color: var(--black);
@@ -208,7 +217,8 @@ i {
 /* barra de navegação */
 
 .logo-topo {
-    width: calc(3rem + 2.5vw);
+    width: calc(2.3rem + 2.5vw);
+    filter: grayscale(0%);
 }
 
 header {
@@ -258,7 +268,7 @@ header {
 }
 
 .home-projetos figcaption a {
-    background-color: var(--lilas);
+    background-color: var(--roxo);
     font-size: calc(0.8rem + 1vw);
 }
 
@@ -302,6 +312,11 @@ header {
     bottom: 7px;
     right: 0px;
     color: rgba(0, 0, 0, 0);
+}
+
+.underline-hover:hover {
+    border-bottom: 3px solid var(--white);
+    color: var(--blue) !important;
 }
 
 /* home video */
@@ -368,8 +383,18 @@ header {
     border-bottom: 3px solid var(--blue);
 }
 
+.quero-proposta:hover {
+    border-bottom: 3px solid var(--white);
+    color: var(--blue) !important;
+}
+
 .mais-projetos {
     border-bottom: 3px solid var(--roxo);
+}
+
+.mais-projetos:hover {
+    border-bottom: 3px solid var(--white);
+    color: var(--roxo) !important;
 }
 
 /* home projetos */

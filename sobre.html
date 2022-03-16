@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
+    <!--custom js-->
+    <script src="./assets/custom-js/custom.js" defer></script>
     <!--fontawesome icons-->
     <script defer src="https://kit.fontawesome.com/fe3e718820.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -28,7 +30,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header id="navbar" class="fixed-top pt-4 mb-10">
+    <header id="navbar" class="mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -36,8 +38,8 @@
                 <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
-                        <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
-                            alt="logo da empresa">
+                        <img id="logo-expandido" class="img-fluid logo-topo"
+                            src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link active" href="sobre.html">O que é Izi</a></li>
@@ -49,12 +51,11 @@
         <nav class="dropdown">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="d-md-none d-lg-none" href="#">
-                    <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
-                        alt="logo da empresa">
+                    <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
+                        src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
                 </a>
-                <a class="d-md-none d-lg-none btn btn-secondary" href="#" role="button"
-                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-bars"></i></a>
+                <a class="d-md-none d-lg-none btn btn-secondary" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="index.html">Home</a></li>
                     <li><a class="dropdown-item" href="servicos.html">Serviços</a></li>
@@ -79,22 +80,21 @@
         <!--fim hero-->
         <div class="d-flex justify-content-end margem-padrao">
             <div class="col-md-8 text-justify margem-padrao">
-                <p class="lg-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit possimus libero deleniti consequuntur,
-                    sapiente quibusdam consectetur. Autem quod rerum itaque recusandae sequi maiores totam vitae
-                    blanditiis, dicta numquam excepturi at? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus, nihil libero harum ipsa, beatae nobis, nam doloribus fuga accusantium odit doloremque
-                    magnam! Neque voluptatum fuga tenetur animi deleniti assumenda quod.</p>
-                <p class="lg-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa ad nostrum veritatis, non
-                    voluptatum animi, blanditiis laudantium eaque suscipit aut tempora labore expedita facilis
-                    assumenda. Laboriosam quaerat dolor deserunt. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Totam, molestias ipsum! Quisquam, illo! Animi quos praesentium velit eveniet porro corporis a,
-                    assumenda, accusamus officia aliquam provident, voluptates nihil eius deleniti?</p>
-                <p class="lg-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eveniet autem sequi recusandae
-                    perspiciatis alias odio quidem magnam velit, mollitia inventore. Quidem quae veritatis expedita
-                    atque sed assumenda fugiat beatae?</p>
-                <p class="lg-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ea? Beatae laboriosam modi dolore.
-                    Maxime ipsum maiores ad molestias temporibus qui, iusto tempore voluptatum beatae consequuntur aut
-                    vel placeat nemo?</p>
+                <p class="lg-p mb-4">adjetivo: eas-y <br>
+                    1. que se executa ou obtém sem dificuldade.</p>
+                <p class="lg-p mb-4">A IZI ASSESSORIA vem da ideia de tornar prático o que muitas vezes pode ser tão
+                    complicado. Nossa proposta é fazer com que a comunicação e solução de problemas sejam rápidas e
+                    efetivas. Sem muitos parênteses. Sabemos como pode ser difícil lidar com tanta demora e atrasos para
+                    que um projeto saia do papel.</p>
+                <p class="lg-p mb-4">O mundo se desenvolve a cada momento. A cada segundo, buscamos coisas novas e
+                    práticas
+                    para o nosso dia a dia. <strong>IZI é saber que dá pra ser mais fácil!</strong> E pode ser quando se
+                    tem direcionamento e uma equipe de ponta.</p>
+                <p class="lg-p mb-4">Nossa equipe trabalha de forma remota, assim podemos te auxiliar independente da
+                    distância e localização. Estamos conectados a pessoas e clientes pelo mundo. Falando em equipe, por
+                    aqui estamos sempre nos aprimorando e aprendendo. Para garantir que você irá
+                    contar com profissionais de alta qualidade e resultados além da expectativa.</p>
+                <p class="lg-p mb-4">Nossos Valores:</p>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -102,16 +102,26 @@
 
     <section class="artigos margem-padrao mt-10">
         <div class="col-md-8 margem-padrao text-justify mt-5">
-            <h3>Título</h3>
-            <p class="lg-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptatem vel exercitationem alias officia repudiandae doloremque ipsam accusamus? Repellat distinctio eum excepturi modi minus nam maxime facilis nulla deleniti unde! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>Confiança</h3>
+            <p class="lg-p mb-4">Acreditamos que a base para uma boa relação, é poder confiar em quem está do nosso
+                lado.
+                Quando se quer alcançar um objetivo, saber com quem contar é ter uma ótima vantagem.
+                Vamos construir uma parceria forte e confiável.</p>
         </div>
         <div class="col-md-8 margem-padrao text-justify mt-6">
-            <h3>Título</h3>
-            <p class="lg-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptatem vel exercitationem alias officia repudiandae doloremque ipsam accusamus? Repellat distinctio eum excepturi modi minus nam maxime facilis nulla deleniti unde! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>Inovação</h3>
+            <p class="lg-p mb-4"> Bom conhecimento aliado a mentes criativas, são capazes de desenvolver ideias
+                brilhantes.
+                Nossos profissionais estão preparados para entregar trabalhos de alta qualidade, de acordo com todas as
+                diretrizes que o projeto necessita.
+                Pensar fora da caixa é entender o que precisa ser feito para podermos alcançar a novidade.</p>
         </div>
         <div class="col-md-8 margem-padrao text-justify mt-6">
-            <h3>Título</h3>
-            <p class="lg-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptatem vel exercitationem alias officia repudiandae doloremque ipsam accusamus? Repellat distinctio eum excepturi modi minus nam maxime facilis nulla deleniti unde! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>Praticidade</h3>
+            <p class="lg-p mb-4"> Nossa principal característica é agilizar processos e fazer tudo de forma mais rápida.
+                Desde a comunicação entre nós e clientes, quanto na rapidez da execução de tarefas.
+                Gostamos de nos desafiar a cada novo projeto e isso nos motiva a sempre buscar formas eficazes de
+                alcançar o sucesso.</p>
         </div>
     </section>
 

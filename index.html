@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
+    <!--custom js-->
+    <script src="./assets/custom-js/custom.js" defer></script>
     <!--fontawesome icons-->
     <script src="https://kit.fontawesome.com/5e6a5b3ca8.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -28,7 +30,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header id="navbar" class="fixed-top pt-4 mb-10">
+    <header id="navbar" class="mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -36,7 +38,7 @@
                 <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
-                        <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
+                        <img id="logo-expandido" class="img-fluid logo-topo" src="./assets/media/img/logo/logo-nav-topo.png"
                             alt="logo da empresa">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
@@ -49,7 +51,7 @@
         <nav class="dropdown">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="d-md-none d-lg-none" href="#">
-                    <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
+                    <img id="logo-dropdown" class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
                         alt="logo da empresa">
                 </a>
                 <a class="d-md-none d-lg-none btn btn-secondary" href="#" role="button"
@@ -89,20 +91,20 @@
             <div class="imagens-projetos imagens-projetos-xs d-flex justify-content-between flex-wrap">
                 <figure class="col-md-4 md-3 position-relative">
                     <a href="#" class="projeto-img-esquerda-container">
-                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
-                    <figcaption class="position-absolute bottom-0 d-flex"><a class="pe-5" href="">fotografia</a>
+                        <img id="img1" class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt="" onmouseover="colorImg(img1)" onmouseout="pbImg(img1)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img1)" onmouseout="pbImg(img1)"><a class="pe-5" href="">fotografia</a>
                     </figcaption>
                 </figure>
                 <figure class="col-md-4 position-relative">
                     <a href="#" class="projeto-img-meio-container">
-                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
-                    <figcaption class="position-absolute bottom-0 d-flex"><a class="pe-5" href="">branding</a>
+                        <img id="img2" class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt="" onmouseover="colorImg(img2)" onmouseout="pbImg(img2)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img2)" onmouseout="pbImg(img2)"><a class="pe-5" href="">branding</a>
                     </figcaption>
                 </figure>
                 <figure class="col-md-4 position-relative">
                     <a href="#" class="projeto-img-direita-container">
-                        <img class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt=""></a>
-                    <figcaption class="position-absolute bottom-0 d-flex"><a class="pe-5" href="">social media</a>
+                        <img id="img3" class="projeto-img" src="./assets/media/img/home/suavinho.JPG" alt="" onmouseover="colorImg(img3)" onmouseout="pbImg(img3)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img3)" onmouseout="pbImg(img3)"><a class="pe-5" href="">social media</a>
                     </figcaption>
                 </figure>
             </div>
@@ -168,11 +170,11 @@
             <h3>Diversidade</h3>
         </div>
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
-            <p class="col-md-5 big-p text-center contato-link-texto">Juntos vamos entender e estudar oportunidades e obstáculos para alcançar
+            <p id="cta-texto" class="col-md-8 col-lg-5 big-p text-center contato-link-texto" onmouseover="ctaAparece(ctalink)">Juntos vamos entender e estudar oportunidades e obstáculos para alcançar
                 os
                 objetivos previstos.</p>
-            <div class="col-md-10 text-end">
-                <a class="mt-2 bigger-p text-end" href="#">Bora conversar?</a>
+            <div class="col-md-9 text-end">
+                <a id="ctalink" class="mt-2 bigger-p text-end" href="#">Bora conversar?</a>
             </div>
         </div>
     </section>

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
+    <!--custom js-->
+    <script src="./assets/custom-js/custom.js" defer></script>
     <!--fontawesome icons-->
     <script defer src="https://kit.fontawesome.com/fe3e718820.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -28,7 +30,7 @@
 <body>
     <!--1 barra de navegação inicio -->
     <!--header inicio-->
-    <header id="navbar" class="fixed-top pt-4 mb-10">
+    <header id="navbar" class="mb-10">
         <!--barra de navegação expandida-->
         <nav>
             <ul class="d-none d-md-flex nav justify-content-around align-items-end">
@@ -36,8 +38,8 @@
                 <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
-                        <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
-                            alt="logo da empresa">
+                        <img id="logo-expandido" class="img-fluid logo-topo"
+                            src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
@@ -49,12 +51,11 @@
         <nav class="dropdown">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="d-md-none d-lg-none" href="#">
-                    <img class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
-                        alt="logo da empresa">
+                    <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
+                        src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
                 </a>
-                <a class="d-md-none d-lg-none btn btn-secondary" href="#" role="button"
-                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-bars"></i></a>
+                <a class="d-md-none d-lg-none btn btn-secondary" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="index.html">Home</a></li>
                     <li><a class="dropdown-item" href="servicos.html">Serviços</a></li>
@@ -79,32 +80,27 @@
         <!--item individual-->
         <div class="texto-servicos d-flex justify-content-end" id="texto-sobe">
             <div class="col-md-8">
-                <p class="me-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus assumenda
-                    necessitatibus
-                    inventore consequatur nostrum excepturi distinctio nobis quia, quidem et pariatur quis atque
-                    nemo fugiat doloremque, cupiditate voluptates ipsum quisquam.</p>
-                <p class="me-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur, recusandae
-                    iure eaque
-                    tempore excepturi numquam id unde ea earum molestiae cupiditate consectetur, quos consequuntur
-                    reiciendis similique autem maiores maxime!</p>
+                <p class="me-4">Expertise no assunto, equipamentos modernos e de qualidade. Que irão ajudar a mostrar ao
+                    público, seus produtos e/ou serviços, eventos, ambientes do dia a dia e diversos materiais que
+                    possam enriquecer a imagem da marca nos mundos online e offline.</p>
+                <p class="me-4">E claro, toda foto pode ser melhorada! Com um toque profissional ali, um retoque aqui,
+                    um tcham acolá. Não existe foto ruim, existe foto sem tratamento.</p>
             </div>
         </div>
         <div class="wrap-div">
             <div class="div1 col-md-3 me-4">
-                <h3>assessoria</h3>
+                <h3>fotografia e edição</h3>
             </div>
             <div class="div2 col-md-8">
-                <img class="img-fluid" src="./assets/media/img/servicos/2-1-Serviços.jpg" alt="">
+                <div id="imgFotografia" class="img-serviços col-12"></div>
                 <div class="texto-servicos d-flex justify-content-end" id="texto-desce">
                     <div class="col-md-8">
-                        <p class="me-4 texto-desce-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus assumenda
-                            necessitatibus
-                            inventore consequatur nostrum excepturi distinctio nobis quia, quidem et pariatur quis atque
-                            nemo fugiat doloremque, cupiditate voluptates ipsum quisquam.</p>
-                        <p class="me-4 texto-desce-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur, recusandae
-                            iure eaque
-                            tempore excepturi numquam id unde ea earum molestiae cupiditate consectetur, quos consequuntur
-                            reiciendis similique autem maiores maxime!</p>
+                        <p class="me-4 texto-desce-p">Expertise no assunto, equipamentos modernos e de qualidade. Que
+                            irão ajudar a mostrar ao público, seus produtos e/ou serviços, eventos, ambientes do dia a
+                            dia e diversos materiais que possam enriquecer a imagem da marca nos mundos online e
+                            offline.</p>
+                        <p class="me-4 texto-desce-p">E claro, toda foto pode ser melhorada! Com um toque profissional
+                            ali, um retoque aqui, um tcham acolá. Não existe foto ruim, existe foto sem tratamento.</p>
                     </div>
                 </div>
                 <div class="div3">
@@ -131,7 +127,8 @@
 
         <!--4 cta inicio-->
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
-            <p class="col-md-5 big-p text-center contato-link-texto">Juntos vamos entender e estudar oportunidades e obstáculos para alcançar
+            <p class="col-md-5 big-p text-center contato-link-texto">Juntos vamos entender e estudar oportunidades e
+                obstáculos para alcançar
                 os
                 objetivos previstos.</p>
             <div class="col-md-10 text-end">

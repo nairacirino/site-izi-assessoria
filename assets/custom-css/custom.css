@@ -39,6 +39,7 @@ a {
 
 a:hover {
     color: var(--roxo) !important;
+    cursor: pointer;
 }
 
 .active {
@@ -106,8 +107,9 @@ img {
     filter: grayscale(100%);
 }
 
-img:hover {
+img:hover, .img-js-hover {
     filter: grayscale(0%);
+    transition: 2s;
 }
 
 .mt-6 {
@@ -216,9 +218,24 @@ i {
 
 /* barra de navegação */
 
+#navbar {
+    overflow: hidden;
+    transition: 0.2s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding-top: 1.5rem
+}
+
 .logo-topo {
     width: calc(2.3rem + 2.5vw);
     filter: grayscale(0%);
+}
+
+#logo-expandido {
+    padding-bottom: 1.5rem;
 }
 
 header {
@@ -272,6 +289,10 @@ header {
     font-size: calc(0.8rem + 1vw);
 }
 
+.home-projetos figcaption a:hover {
+    color: inherit !important;
+}
+
 .home-projetos figure {
     display: flex;
     flex-direction: column;
@@ -308,6 +329,7 @@ header {
 }
 
 .underline-hover {
+    transition: 1s;
     border-bottom: 3px solid var(--blue);
     bottom: 7px;
     right: 0px;
@@ -315,6 +337,7 @@ header {
 }
 
 .underline-hover:hover {
+    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--blue) !important;
 }
@@ -322,7 +345,7 @@ header {
 /* home video */
 
 .video-div {
-    height: 400px; 
+    height: 400px;
     overflow: hidden;
 }
 
@@ -380,21 +403,33 @@ header {
 }
 
 .quero-proposta {
+    transition: 1s;
     border-bottom: 3px solid var(--blue);
 }
 
 .quero-proposta:hover {
+    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--blue) !important;
 }
 
 .mais-projetos {
+    transition: 1s;
     border-bottom: 3px solid var(--roxo);
 }
 
 .mais-projetos:hover {
+    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--roxo) !important;
+}
+
+#imgFotografia {
+    height: 195px;
+    background: url(../media/img/servicos/fotografia.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 /* home projetos */
@@ -434,6 +469,14 @@ header {
     border: none;
     background-color: var(--roxo);
     color: var(--white);
+}
+
+.enviar-btn:focus {
+    background-color: var(--blue) !important;
+}
+
+#ctalink {
+    display: none;
 }
 
 /* responsivo */

@@ -433,9 +433,14 @@ header {
 #imgFotografia {
     height: 195px;
     background: url(../media/img/servicos/fotografia.jpg);
+    filter: grayscale(100%);
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
+}
+
+#imgFotografia:hover {
+    filter: grayscale(0%);
 }
 
 .faixa-lateral {

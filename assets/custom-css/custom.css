@@ -342,6 +342,12 @@ header {
     color: var(--blue) !important;
 }
 
+#titulo-projetos {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 0.76;
+}
+
 /* home video */
 
 .video-div {
@@ -432,10 +438,41 @@ header {
     background-repeat: no-repeat;
 }
 
+.faixa-lateral {
+    max-width: 2.5rem;
+    top: clamp(3rem, calc(3.5rem + 3.5vw), 6rem);
+    filter: grayscale(0%) !important;
+}
+
+.quadrado-sobre {
+    filter: grayscale(0%) !important;
+    z-index: -1000;
+    max-width: 65%;
+}
+
+.sobre-titulo {
+    line-height: .65;
+}
+
 /* home projetos */
 
 .projetos h3 {
     text-transform: uppercase;
+}
+
+.faixa-centro {
+    max-width: 2.5rem;
+    margin: 0 auto;
+    filter: grayscale(0%) !important;
+    z-index: -1000;
+}
+
+/* infoblog */
+.circulo-infoblog {
+    filter: grayscale(0%) !important;
+    z-index: -1000;
+    width: clamp(9rem, calc(11rem + 11vw), 18rem);
+    margin-left: 5rem;
 }
 
 /* artigo */

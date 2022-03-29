@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="./assets/custom-css/fontface.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/custom-css/custom.css">
-    <!--custom js-->
-    <script src="./assets/custom-js/custom.js" defer></script>
     <!--fontawesome icons-->
     <script defer src="https://kit.fontawesome.com/fe3e718820.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -47,17 +45,17 @@
             </ul>
         </nav>
     </header>
-        <!--fim barra de navegacao expandida-->
-        <!--dropdown inicio-->
-        <nav class="mt-5">
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="d-md-none d-lg-none" href="#">
-                    <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
-                        src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
-                </a>
-                <div class="dropdown mt-2">
-                    <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
+    <!--fim barra de navegacao expandida-->
+    <!--dropdown inicio-->
+    <nav class="mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="d-md-none d-lg-none" href="#">
+                <img id="logo-dropdown" class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
+                    alt="logo da empresa">
+            </a>
+            <div class="dropdown mt-2">
+                <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
@@ -69,8 +67,9 @@
                     <li><a class="dropdown-item" href="contato.html">Contato</a></li>
                 </ul>
             </div>
-        </nav>
-        <!--dropdown fim-->
+        </div>
+    </nav>
+    <!--dropdown fim-->
     <!--fim barra de navegação-->
 
     <!--2 projetos inicio-->
@@ -78,52 +77,144 @@
         <div class="vh-50">
             <h2 id="titulo-projetos" class="margem-padrao margem-hero-proj text-center">Projetos</h2>
             <div class="d-flex justify-content-center">
-            <img class="position-absolute faixa-centro d-none d-md-block" src="./assets/media/img/Faixa-degrade-texto.png" alt="">
+                <img class="position-absolute faixa-centro d-none d-md-block"
+                    src="./assets/media/img/Faixa-degrade-texto.png" alt="">
+            </div>
         </div>
-        </div>
-        <!--projeto 1-->
+        <!--projeto 1 fotografia-->
         <div class="wrap-projetos mb-1">
-            <h3 class="text-center">fotografia</h3>
-            <p class="text-center mb-7">abrir mais</p>
-            <!--fileira-->
+            <header class="project-header">
+                <h3 class="text-center pointer project-title"
+                    onmouseover="delClass('abrirmaisfotografiaesquerda', 'text-hidden')">fotografia</h3>
+                <p id="abrirmaisfotografiaesquerda" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="delClass('fotografiaesquerdawrap', 'div-hidden'), delClass('fotografiameiowrap', 'div-hidden'), delClass('fotografiadireitawrap', 'div-hidden')">
+                    abrir mais</p>
+            </header>
+            <!--fileira de projetos de fotografia-->
             <div class="bloco d-flex justify-content-between flex-wrap">
-                <!--item-->
-                <div class="item col-md-4 mb-5">
-                    <a href="" class="projeto-img-esquerda-container">
-                        <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
-                    </a>
-                    <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
-                        itaque et,
-                        laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
-                        aliquam
-                        temporibus quod veniam expedita quidem?</p>
+                <!--item da esquerda-->
+                <div id="fotografiaesquerdawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="addClass('testepaiesquerda', 'slides'), delClass('leiasobrefotografiaesquerda', 'text-hidden')">
+                    <!--imagens da esquerda-->
+                    <div id="testepaiesquerda" class="projeto-img-esquerda-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladoesquerda-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladoesquerda-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladoesquerda-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da esquerda-->
+                    <!--textos da esquerda-->
+                    <div>
+                        <p id="leiasobrefotografiaesquerda" class="abrirmais pointer text-hidden"
+                            onclick="delClass('textofotografiape1','textfhidden'), delClass('textofotografiape2','textfhidden'), delClass('textofotografiape3','textfhidden'), addClass('leiasobrefotografiaesquerda', 'd-none')">
+                            leia sobre</p>
+                        <p id="textofotografiape1" class="me-5 textofotografia textfhidden"><b>Cliente:</b> Cecilia
+                            Dale<br>
+                            <b>Projeto:</b> Fotografia e edição
+                        </p>
+                        <p id="textofotografiape2" class="me-5 textofotografia textfhidden">Para esta empresa
+                            tradicional de
+                            São
+                            Paulo que tem mais de 30 anos de existência no mercado,
+                            desenvolvemos shootings de produtos em formato Still para e-commerce, fotografia
+                            publicitária para as mídias digitais e campanhas.</p>
+                        <p id="textofotografiape3" class="me-5 textofotografia textfhidden">Na sessão de fotos seguimos
+                            uma
+                            linguagem clássica para trazer toda a essência da marca no
+                            mundo digital.</p>
+                    </div>
+                    <!--fim dos textos da esquerda-->
                 </div>
-                <!--fim item-->
-                <!--item-->
-                <div class="item col-md-4 mb-5">
-                    <a href="" class="projeto-img-meio-container">
-                        <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
-                    </a>
-                    <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
-                        itaque et,
-                        laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
-                        aliquam
-                        temporibus quod veniam expedita quidem?</p>
+                <!--fim item da esquerda-->
+                <!--item do meio-->
+                <div id="fotografiameiowrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="addClass('testepaimeio', 'slides'), delClass('leiasobrefotografiameio', 'text-hidden')">
+                    <!--imagens do meio-->
+                    <div id="testepaimeio" class="projeto-img-meio-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-centro-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-centro-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-centro-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens do meio-->
+                    <!--textos do meio-->
+                    <div class="ms-1">
+                        <p id="leiasobrefotografiameio" class="abrirmais pointer text-hidden"
+                            onclick="delClass('textofotografiapm1','textfhidden'), delClass('textofotografiapm2','textfhidden'), delClass('textofotografiapm3','textfhidden'), addClass('leiasobrefotografiameio', 'd-none')">
+                            leia sobre</p>
+                        <p id="textofotografiapm1" class="me-5 textofotografia textfhidden"><b>Cliente:</b> Tempero da
+                            Vila<br>
+                            <b>Projeto:</b> Fotografia e edição
+                        </p>
+                        <p id="textofotografiapm2" class="me-5 textofotografia textfhidden">O restaurante Tempero da
+                            Vila buscou a IZI Assessoria para criar todo o conteúdo institucional da empresa, assim como
+                            suas fotos para cardápio, mídias digitais e impressas.</p>
+                        <p id="textofotografiapm3" class="me-5 textofotografia textfhidden">Criando um conceito rústico
+                            e caseiro!</p>
+                    </div>
                 </div>
-                <!--fim item-->
-                <!--item-->
-                <div class="item col-md-4 mb-5">
-                    <a href="" class="projeto-img-direita-container">
-                        <img class="img-fluid" src="./assets/media/img/home/suavinho.JPG" alt="">
-                    </a>
-                    <p>leia sobre</p>
-                    <p class="me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi, architecto sit
-                        itaque et,
-                        laboriosam nostrum mollitia quas, deleniti inventore perspiciatis quo voluptatum laudantium
-                        aliquam
-                        temporibus quod veniam expedita quidem?</p>
+                <!--fim item do meio-->
+                <!--item da direita-->
+                <div id="fotografiadireitawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="addClass('testepaidireita', 'slides'), delClass('leiasobrefotografiadireita', 'text-hidden')">
+                    <!--imagens direita-->
+                    <div id="testepaidireita" class="projeto-img-direita-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladodireito-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladodireito-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/fotografia/Projetos-fotografia-ladodireito-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da direita-->
+                    <!--textos da direita-->
+                    <div class="ms-2">
+                        <p id="leiasobrefotografiadireita" class="abrirmais pointer text-hidden"
+                            onclick="delClass('textofotografiapd1','textfhidden'), delClass('textofotografiapd2','textfhidden'), addClass('leiasobrefotografiadireita', 'd-none')">
+                            leia sobre</p>
+                        <p id="textofotografiapd1" class="me-5 textofotografia textfhidden">
+                            <b>Cliente:</b> Blittzen<br>
+                            <b>Projeto:</b> Fotografia e edição
+                        </p>
+                        <p id="textofotografiapd2" class="me-5 textofotografia textfhidden">Com toda a sua magia e encanto natalino a Blittzen buscou nossos olhares para uma sessão de fotos externa nos shoppings de São Paulo e região, registrando toda a experiência que seus clientes tiveram nessa época do ano e cenários produzidos.</p>
+                    </div>
                 </div>
                 <!--fim item-->
             </div>
@@ -168,6 +259,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!--custom js-->
+    <script src="./assets/custom-js/custom.js"></script>
 </body>
 
 </html>

@@ -35,7 +35,8 @@ function scrollFunction() {
 // link de cta aparecendo em hover //
 
 function ctaAparece(x) {
-    x.style.display = "block";
+    x.style.transition = "2s";
+    x.style.opacity = "1";
 }
 
 // slideshow imagens em projetos //

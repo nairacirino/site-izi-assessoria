@@ -531,7 +531,8 @@ header {
 }
 
 #ctalink {
-    display: none;
+    opacity: 0;
+    transition: 2s;
 }
 
 /* responsivo */

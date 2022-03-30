@@ -22,9 +22,13 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.padding = "0px";
         document.getElementById("logo-expandido").style.padding = "0px";
+        document.getElementById("navbar").style.transition = "2s";
+        document.getElementById("logo-expandido").style.transition = "2s";
     } else {
         document.getElementById("navbar").style.padding = "1.5rem 0 0 0";
         document.getElementById("logo-expandido").style.padding = "0 0 1.5rem 0";
+        document.getElementById("navbar").style.transition = "2s";
+        document.getElementById("logo-expandido").style.transition = "2s";
     }
 };
 

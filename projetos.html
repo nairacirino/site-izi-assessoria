@@ -37,7 +37,7 @@
                 <li class="nav-item"><a class="nav-link active" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
                         <img id="logo-expandido" class="img-fluid logo-topo"
-                            src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
+                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
@@ -50,7 +50,7 @@
     <nav class="mt-5">
         <div class="d-flex justify-content-between align-items-center">
             <a class="d-md-none d-lg-none" href="#">
-                <img id="logo-dropdown" class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo.png"
+                <img id="logo-dropdown" class="img-fluid logo-topo pb-3" src="./assets/media/img/logo/logo-nav-topo-b.png"
                     alt="logo da empresa">
             </a>
             <div class="dropdown mt-2">
@@ -75,7 +75,10 @@
     <!--2 projetos inicio-->
     <main class="projetos">
         <div class="vh-50">
-            <h2 id="titulo-projetos" class="margem-padrao margem-hero-proj text-center">Projetos</h2>
+            <div class="col-12 col-md-9 col-lg-8 text-end">
+                <h2 id="titulo-projetos" class="margem-hero-proj text-end">A cada desafio</h2>
+                <h3>uma nova solução!</h3>
+            </div>
             <div class="d-flex justify-content-center">
                 <img class="position-absolute faixa-centro d-none d-md-block"
                     src="./assets/media/img/Faixa-degrade-texto.png" alt="">
@@ -121,11 +124,11 @@
                         <p id="leiasobrefotografiaesquerda" class="abrirmais pointer text-hidden"
                             onclick="delClass('textofotografiape1','textfhidden'), delClass('textofotografiape2','textfhidden'), delClass('textofotografiape3','textfhidden'), addClass('leiasobrefotografiaesquerda', 'd-none')">
                             leia sobre</p>
-                        <p id="textofotografiape1" class="me-5 textofotografia textfhidden"><b>Cliente:</b> Cecilia
+                        <p id="textofotografiape1" class="me-5 textofotografia textfhidden"><span class="purple">Cliente:</span> Cecilia
                             Dale<br>
-                            <b>Projeto:</b> Fotografia e edição
+                            <span class="purple">Projeto:</span> Fotografia e edição
                         </p>
-                        <p id="textofotografiape2" class="me-5 textofotografia textfhidden">Para esta empresa
+                        <p id="textofotografiape2" class="me-5 mt-3 textofotografia textfhidden">Para esta empresa
                             tradicional de
                             São
                             Paulo que tem mais de 30 anos de existência no mercado,
@@ -168,11 +171,11 @@
                         <p id="leiasobrefotografiameio" class="abrirmais pointer text-hidden"
                             onclick="delClass('textofotografiapm1','textfhidden'), delClass('textofotografiapm2','textfhidden'), delClass('textofotografiapm3','textfhidden'), addClass('leiasobrefotografiameio', 'd-none')">
                             leia sobre</p>
-                        <p id="textofotografiapm1" class="me-5 textofotografia textfhidden"><b>Cliente:</b> Tempero da
+                        <p id="textofotografiapm1" class="me-5 textofotografia textfhidden"><span class="purple">Cliente:</span> Tempero da
                             Vila<br>
-                            <b>Projeto:</b> Fotografia e edição
+                            <span class="purple">Projeto:</span> Fotografia e edição
                         </p>
-                        <p id="textofotografiapm2" class="me-5 textofotografia textfhidden">O restaurante Tempero da
+                        <p id="textofotografiapm2" class="me-5 mt-3 textofotografia textfhidden">O restaurante Tempero da
                             Vila buscou a IZI Assessoria para criar todo o conteúdo institucional da empresa, assim como
                             suas fotos para cardápio, mídias digitais e impressas.</p>
                         <p id="textofotografiapm3" class="me-5 textofotografia textfhidden">Criando um conceito rústico
@@ -210,10 +213,13 @@
                             onclick="delClass('textofotografiapd1','textfhidden'), delClass('textofotografiapd2','textfhidden'), addClass('leiasobrefotografiadireita', 'd-none')">
                             leia sobre</p>
                         <p id="textofotografiapd1" class="me-5 textofotografia textfhidden">
-                            <b>Cliente:</b> Blittzen<br>
-                            <b>Projeto:</b> Fotografia e edição
+                            <span class="purple">Cliente:</span> Blittzen<br>
+                            <span class="purple">Projeto:</span/ > Fotografia e edição
                         </p>
-                        <p id="textofotografiapd2" class="me-5 textofotografia textfhidden">Com toda a sua magia e encanto natalino a Blittzen buscou nossos olhares para uma sessão de fotos externa nos shoppings de São Paulo e região, registrando toda a experiência que seus clientes tiveram nessa época do ano e cenários produzidos.</p>
+                        <p id="textofotografiapd2" class="me-5 mt-3 textofotografia textfhidden">Com toda a sua magia e
+                            encanto natalino a Blittzen buscou nossos olhares para uma sessão de fotos externa nos
+                            shoppings de São Paulo e região, registrando toda a experiência que seus clientes tiveram
+                            nessa época do ano e cenários produzidos.</p>
                     </div>
                 </div>
                 <!--fim item-->

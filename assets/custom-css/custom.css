@@ -172,6 +172,18 @@ img:hover, .img-js-hover {
 position: relative;
 }
 
+.tituloprojetoswrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navtopo li {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+}
+
 #faixarespeito {
     max-height: calc(1.3rem + 1.3vw);
     position: absolute;
@@ -185,6 +197,11 @@ position: relative;
     color: var(--roxo);
 }
 
+.blue-nt {
+    transition: .1s;
+    color: var(--blue);
+}
+
 label, input, button {
     display: block;
     font-size: 1.5rem;
@@ -192,6 +209,10 @@ label, input, button {
 
 input {
     width: 100%;
+}
+
+.textosolucao {
+    font-size: calc(1.5rem + 1.8vw) !important;
 }
 
 .nav-link {
@@ -788,7 +809,7 @@ header {
 
     /* css3 animation */
     -webkit-animation-name: anim_slides;
-    -webkit-animation-duration: 24.0s;
+    -webkit-animation-duration: 9.0s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
@@ -797,7 +818,7 @@ header {
     -webkit-animation-fill-mode: forwards;
 
     -moz-animation-name: anim_slides;
-    -moz-animation-duration: 24.0s;
+    -moz-animation-duration: 9.0s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: normal;
@@ -808,12 +829,12 @@ header {
 
 /* css3 delays */
 .slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
-    -webkit-animation-delay: 8.0s;
-    -moz-animation-delay: 8.0s;
+    -webkit-animation-delay: 3.0s;
+    -moz-animation-delay: 3.0s;
 }
 .slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
-    -webkit-animation-delay: 16.0s;
-    -moz-animation-delay: 16.0s;
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
 }
 
 .slides ul li img {
@@ -821,6 +842,12 @@ header {
     display:block;
     width: 100%;
     filter: none;
+}
+
+.zoom {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .pointer {

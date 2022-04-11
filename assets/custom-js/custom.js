@@ -9,6 +9,16 @@ function destrocaLogo(x) {
     img.src = './assets/media/img/logo/logo-nav-topo-b.png';
 }
 
+// substitui texto 
+
+function trocaTexto(x, y) {
+    var texto = document.getElementById(x).value;
+    console.log(texto);
+    texto = y;
+    console.log(texto)
+    texto.innerHTML;
+}
+
 
 // funções para hover preto e branco x colorido //
 function pbImg(x) {

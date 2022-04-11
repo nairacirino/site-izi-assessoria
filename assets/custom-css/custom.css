@@ -168,6 +168,19 @@ img:hover, .img-js-hover {
     text-align: justify;
 }
 
+.homerespeito {
+position: relative;
+}
+
+#faixarespeito {
+    max-height: calc(1.3rem + 1.3vw);
+    position: absolute;
+    bottom: 0;
+    left: -0.7rem;
+    filter: grayscale(0);
+    z-index: -1;
+}
+
 .purple {
     color: var(--roxo);
 }
@@ -203,7 +216,6 @@ footer {
 }
 
 .social-bg:hover {
-    transition: all 2s ease;
     background-color: var(--roxo);
     color: var(--white);
 }
@@ -337,12 +349,16 @@ header {
     background-color: var(--black);
 }
 
+.homeprojeto-img-container {
+    width: 100%;
+    height: 100%;
+}
+
 .pb-1 {
     font-size: 1.1rem;
 }
 
 .underline-hover {
-    transition: 1s;
     border-bottom: 3px solid var(--blue);
     bottom: 7px;
     right: 0px;
@@ -350,7 +366,6 @@ header {
 }
 
 .underline-hover:hover {
-    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--blue) !important;
 }
@@ -422,34 +437,32 @@ header {
 }
 
 .quero-proposta {
-    transition: 1s;
     border-bottom: 3px solid var(--blue);
 }
 
 .quero-proposta:hover {
-    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--blue) !important;
 }
 
 .mais-projetos {
-    transition: 1s;
     border-bottom: 3px solid var(--roxo);
 }
 
 .mais-projetos:hover {
-    transition: 1s;
     border-bottom: 3px solid var(--white);
     color: var(--roxo) !important;
 }
 
-#imgFotografia {
+#imgFotografiaDiv {
     height: 195px;
-    background: url(../media/img/servicos/fotografia.jpg);
+    overflow: hidden;
+}
+
+#imgFotografia {
+    object-fit: none;
+    object-position: center;
     filter: grayscale(100%);
-    background-attachment: fixed;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 #imgFotografia:hover {
@@ -532,7 +545,6 @@ header {
 
 #ctalink {
     opacity: 0;
-    transition: 2s;
 }
 
 /* responsivo */
@@ -626,6 +638,10 @@ header {
     .infoblog-hero-sm {
         font-size: clamp(3rem, calc(3.5rem + 3.5vw), 60px);
         text-transform: uppercase;
+    }
+
+    #imgFotografia {
+        object-fit: cover;
     }
 }
 

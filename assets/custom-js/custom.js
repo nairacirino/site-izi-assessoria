@@ -1,7 +1,14 @@
-// //função substitui imagem
-// function subImagem(x) {
-//     document.getElementById(x).src = "./assets/media/img/projetos/fotografia/Projetos-fotografia-ladoesquerda-imagem02.jpg";
-// }
+// função substitui imagem
+function trocaLogo(x) {
+    var img = document.getElementById(x);
+    img.src = './assets/media/img/logo/logo-nav-topo.png';
+}
+
+function destrocaLogo(x) {
+    var img = document.getElementById(x);
+    img.src = './assets/media/img/logo/logo-nav-topo-b.png';
+}
+
 
 // funções para hover preto e branco x colorido //
 function pbImg(x) {
@@ -35,7 +42,7 @@ function scrollFunction() {
 // link de cta aparecendo em hover //
 
 function ctaAparece(x) {
-    x.style.transition = "2s";
+    x.style.transition = ".1s";
     x.style.opacity = "1";
 }
 

@@ -36,7 +36,7 @@
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
                         <img id="logo-expandido" class="img-fluid logo-topo"
-                            src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
+                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-expandido')" onmouseout="destrocaLogo('logo-expandido')">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
@@ -50,7 +50,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <a class="d-md-none d-lg-none" href="#">
                     <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
-                        src="./assets/media/img/logo/logo-nav-topo.png" alt="logo da empresa">
+                        src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-dropdown')" onmouseout="destrocaLogo('logo-dropdown')">
                 </a>
                 <div class="dropdown mt-2">
                     <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink"
@@ -87,24 +87,24 @@
         <!--3 projetos inicio-->
         <section class="home-projetos home-projetos-xs mb-6">
             <div class="imagens-projetos imagens-projetos-xs d-flex justify-content-between flex-wrap">
-                <figure class="col-md-4 md-3 position-relative">
-                    <a href="#" class="projeto-img-esquerda-container">
+                <figure class="col-12 col-md-4 md-3 position-relative">
+                    <a href="#" class="projeto-img-esquerda-container homeprojeto-img-container">
                         <img id="img1" class="projeto-img" src="./assets/media/img/home/Home-fotografia-ladoesquerdo.jpg" alt=""
                             onmouseover="colorImg(img1)" onmouseout="pbImg(img1)"></a>
                     <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img1)"
                         onmouseout="pbImg(img1)"><a class="pe-5" href="">fotografia</a>
                     </figcaption>
                 </figure>
-                <figure class="col-md-4 position-relative">
-                    <a href="#" class="projeto-img-meio-container">
+                <figure class="col-12 col-md-4 position-relative">
+                    <a href="#" class="projeto-img-meio-container homeprojeto-img-container">
                         <img id="img2" class="projeto-img" src="./assets/media/img/home/home-socialmedia-centro.jpg" alt=""
                             onmouseover="colorImg(img2)" onmouseout="pbImg(img2)"></a>
                     <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img2)"
                         onmouseout="pbImg(img2)"><a class="pe-5" href="">branding</a>
                     </figcaption>
                 </figure>
-                <figure class="col-md-4 position-relative">
-                    <a href="#" class="projeto-img-direita-container">
+                <figure class="col-12 col-md-4 position-relative">
+                    <a href="#" class="projeto-img-direita-container homeprojeto-img-container">
                         <img id="img3" class="projeto-img" src="./assets/media/img/home/Home-branding-direito.jpg" alt=""
                             onmouseover="colorImg(img3)" onmouseout="pbImg(img3)"></a>
                     <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img3)"
@@ -127,14 +127,14 @@
             </h2>
             <div class="video-div">
                 <video class="embed-responsive-item w-100 mw-100" controls autoplay loop muted>
-                    <source src="./assets/media/video/mov_bbb.mp4" type="video/mp4">
+                    <source src="./assets/media/video/videohome.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
         <!--fim video institucional-->
 
         <!--5 infoblog inicio-->
-        <section class="home-infoblog mt-8 pt-8 position-relative mb-6">
+        <section class="home-infoblog mt-5 pt-8 position-relative mb-6">
             <div class="wrap-div">
                 <div class="circulo-gradient position-absolute top-0 end-0 me-4"></div>
                 <h2 class="text-end margem-padrao">Infoblog</h2>
@@ -170,7 +170,7 @@
     <section class="cta-contato margem-padrao">
         <div class="tres-linhas">
             <h3>Inclusão</h3>
-            <h3>Respeito</h3>
+            <h3 class="homerespeito"><img id="faixarespeito" class="img-fluid" src="./assets/media/img/faixarespeito.png" alt=""> Respeito</h3>
             <h3>Diversidade</h3>
         </div>
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">

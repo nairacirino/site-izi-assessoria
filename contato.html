@@ -39,7 +39,7 @@
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
                         <img id="logo-expandido" class="img-fluid logo-topo"
-                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa">
+                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-expandido')" onmouseout="destrocaLogo('logo-expandido')">
                     </a></li>
                 <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
@@ -53,7 +53,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <a class="d-md-none d-lg-none" href="#">
                     <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
-                        src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa">
+                        src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-dropdown')" onmouseout="destrocaLogo('logo-dropdown')">
                 </a>
                 <div class="dropdown mt-2">
                     <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink"
@@ -75,7 +75,7 @@
 
     <!--2 artigo inicio-->
     <header>
-        <div class="vh-100 d-flex flex-column justify-content-center">
+        <div style="height: 85vh" class="cheight d-flex flex-column justify-content-center">
             <div class="artigo-bg d-flex flex-column justify-content-center video-div position-relative">
                 <video autoplay loop class="bg-home-video">
                     <source src="./assets/media/video/video-home-original.webm" type="video/webm">
@@ -110,9 +110,13 @@
                 <label class="mt-5" for="">Quais soluções você está procurando?</label>
                 <input type="text">
 
-                <button class="mt-8 enviar-btn bigger-p">ENVIAR</button>
+                <button class="mt-8 enviar-btn bigger-p" type="button" onclick="delClass('enviouformulario', 'text-hidden')">ENVIAR</button>
             </form>
         </fieldset>
+        <div>
+            <p id="enviouformulario" class="mt-5 bigger-p purple text-hidden">Já recebemos aqui, estamos animados para começar essa parceria.</p>
+            <p id="naoenviouformulario" class="bigger-p purple text-hidden">Mensagem de erro no envio</p>
+        </div>
     </main>
     <!--4 cta inicio-->
     <div class="d-flex justify-content-center align-items-center">

@@ -79,3 +79,19 @@ function delClass(id, classe) {
     }
     elemento.className = classes.join(' ');
 }
+
+//
+$(window).on("scroll load",function(){
+	var aparecer = 50; // porcentagem (neste caso, é a metade, 50%)
+	var eleHeight = $('#ctanimacao').outerHeight(); // altura da div
+	var eleTopo = $('#ctanimacao').offset().top; // distancia da div ao topo do documento
+	var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
+	var distance = eleTopo-scrlTopo; // distancia da div ao topo da janela
+	var altJanela = window.innerHeight; // altura da janela
+
+	if(distance <= altJanela-(eleHeight*(aparecer/100))) {
+		addClass('ctanimacao', 'slidectaup')
+	} else {
+        delClass('ctanimacao', 'slidectaup')
+    }
+});

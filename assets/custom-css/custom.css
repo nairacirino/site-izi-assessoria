@@ -1036,7 +1036,7 @@ header {
 
 @keyframes slidectaup {
     0% {
-        transform: translateY(25%);
+        transform: translateY(50%);
         opacity: 0;
     }
 
@@ -1048,7 +1048,7 @@ header {
 
 @-moz-keyframes slidectaup {
     0% {
-        transform: translateY(25%);
+        transform: translateY(50%);
         opacity: 0;
     }
 
@@ -1060,7 +1060,7 @@ header {
 
 @-webkit-keyframes slidectaup {
     0% {
-        transform: translateY(25%);
+        transform: translateY(50%);
         opacity: 0;
     }
 
@@ -1072,7 +1072,7 @@ header {
 
 @-o-keyframes slidectaup {
     0% {
-        transform: translateY(25%);
+        transform: translateY(50%);
     }
 
     100% {

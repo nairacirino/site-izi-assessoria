@@ -82,7 +82,7 @@ function delClass(id, classe) {
 
 //
 $(window).on("scroll load",function(){
-	var aparecer = 50; // porcentagem (neste caso, é a metade, 50%)
+	var aparecer = 1; // porcentagem (neste caso, é a metade, 50%)
 	var eleHeight = $('#ctanimacao').outerHeight(); // altura da div
 	var eleTopo = $('#ctanimacao').offset().top; // distancia da div ao topo do documento
 	var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela

@@ -1083,3 +1083,7 @@ header {
 .opacity0 {
     opacity: 0;
 }
+
+#ctanimacao {
+    height: 100%;
+}

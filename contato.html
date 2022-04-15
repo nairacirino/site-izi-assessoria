@@ -91,26 +91,26 @@
         <h3>deixa que <span class="purple">cuidamos disso pra você</span></h3>
         <p class="mt-5 bigger-p">Nos conte mais sobre você e o projeto:</p>
         <fieldset class="mt-6">
-            <form action="" class="">
+            <form action="enviaform.php" method="post" name="form" class="">
                 <label for="">Qual seu nome?</label>
-                <input type="text">
+                <input name="nome" type="text">
 
                 <label class="mt-5" for="">Qual seu melhor e-mail?</label>
-                <input type="text">
+                <input name="email" type="text">
 
                 <label class="mt-5" for="">Se preferir por Whatsapp, passa aí:</label>
-                <input type="text">
+                <input name="telefone" type="text">
 
                 <label class="mt-8" for="">Qual nome da empresa?</label>
-                <input type="text">
+                <input name="empresa" type="text">
 
                 <label class="mt-5" for="">Qual segmento/ramo de atuação da empresa?</label>
-                <input type="text">
+                <input name="segmento" type="text">
 
                 <label class="mt-5" for="">Quais soluções você está procurando?</label>
-                <input type="text">
+                <input name="mensagem" type="text">
 
-                <button class="mt-8 enviar-btn bigger-p" type="button" onclick="delClass('enviouformulario', 'text-hidden')">ENVIAR</button>
+                <button name="submit" value="submit" class="mt-8 enviar-btn bigger-p" type="button" onclick="delClass('enviouformulario', 'text-hidden')">ENVIAR</button>
             </form>
         </fieldset>
         <div>

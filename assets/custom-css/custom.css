@@ -1017,21 +1017,25 @@ header {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    animation-delay: .5s;
 
     -moz-animation-name: slidectaup;
     -moz-animation-duration: 1s;
     -moz-animation-timing-function: ease-in;
     -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: .5s;
 
     -webkit-animation-name: slidectaup;
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
 
     -o-animation-name: slidectaup;
     -o-animation-duration: 1s;
     -o-animation-timing-function: ease-in;
     -o-animation-fill-mode: forwards;
+    -o-animation-delay: .5s;
 }
 
 @keyframes slidectaup {

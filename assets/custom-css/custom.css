@@ -423,10 +423,6 @@ header {
 
 /* servicos*/
 
-.servicos {
-    margin-top: 13rem;
-}
-
 .wrap-div {
     display: flex;
     flex-direction: row;
@@ -481,7 +477,7 @@ header {
 }
 
 #imgFotografia {
-    object-fit: none;
+    object-fit: cover;
     object-position: center;
     filter: grayscale(100%);
 }
@@ -577,6 +573,20 @@ header {
         text-align: center;
     }
 
+    #imgFotografia {
+        height: 100%;
+        width: auto;
+    }
+
+    .margem-hero-proj {
+        margin-top: 20vh;
+        text-align: center !important;
+    }
+
+    .textosolucao {
+        text-align: center !important;
+    }
+
     .wrap-div {
         justify-content: center;
     }
@@ -592,7 +602,8 @@ header {
     }
 
     .projeto-img-esquerda-container {
-        width: 100%;
+        width: 100vw;
+        height: 98vw;
     }
 
     .cheight {
@@ -603,14 +614,20 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .sobre-titulo {
+        line-height: initial;
     }
 
     .projeto-img-direita-container {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 100%;
+        width: 100vw;
+        height: 100vw;
     }
 
     .home-projetos figcaption a {
@@ -710,6 +727,10 @@ header {
         justify-content: space-between;
     }
 
+    .servicos {
+        margin-top: 5rem;
+    }
+
     .mais-projetos, .div1 {
         margin: 0 !important;
     }
@@ -751,6 +772,10 @@ header {
 @media (min-width: 768px) {
     #texto-desce {
         display: none !important;
+    }
+
+    .servicos {
+        margin-top: 13rem;
     }
 
 }

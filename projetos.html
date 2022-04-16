@@ -48,7 +48,7 @@
     </header>
     <!--fim barra de navegacao expandida-->
     <!--dropdown inicio-->
-    <nav class="mt-5">
+    <nav class="">
         <div class="d-flex justify-content-between align-items-center">
             <a class="d-md-none d-lg-none" href="#">
                 <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
@@ -130,9 +130,9 @@
                         <p id="leiasobrefotografiaesquerda" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiaesquerda', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiaesquerda', 'blue-nt')"
-                            onclick="delClass('fechatextoesquerda', 'textfhidden'), delClass('textofotografiape1','textfhidden'), delClass('textofotografiape2','textfhidden'), delClass('textofotografiape3','textfhidden'), addClass('leiasobrefotografiaesquerda', 'd-none'), addClass('animationwrape', 'slideup')">
+                            onclick="delClass('fechatextoesquerda', 'textfhidden'), delClass('textofotografiape1','textfhidden'), delClass('textofotografiape2','textfhidden'), delClass('textofotografiape3','textfhidden'), addClass('leiasobrefotografiaesquerda', 'd-none'), addClass('animationwrape', 'slideup'), delClass('animationwrape', 'd-none')">
                             leia sobre</p>
-                        <div id="animationwrape" class="">
+                        <div id="animationwrape" class="d-none">
                             <p id="textofotografiape1" class="me-5 textofotografia textfhidden"><span
                                     class="purple">Cliente:</span> Cecilia
                                 Dale<br>
@@ -150,7 +150,7 @@
                                 linguagem clássica para trazer toda a essência da marca no
                                 mundo digital.</p>
                             <p id="fechatextoesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextoesquerda', 'textfhidden'), addClass('textofotografiape1','textfhidden'), addClass('textofotografiape2','textfhidden'), addClass('textofotografiape3','textfhidden'), delClass('leiasobrefotografiaesquerda', 'd-none'), delClass('animationwrape', 'slideup')">
+                                onclick="addClass('fechatextoesquerda', 'textfhidden'), addClass('textofotografiape1','textfhidden'), addClass('textofotografiape2','textfhidden'), addClass('textofotografiape3','textfhidden'), delClass('leiasobrefotografiaesquerda', 'd-none'), delClass('animationwrape', 'slideup'), addClass('animationwrape', 'd-none')">
                                 fechar</p>
                         </div>
                     </div>
@@ -187,9 +187,9 @@
                         <p id="leiasobrefotografiameio" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiameio', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiameio', 'blue-nt')"
-                            onclick="delClass('textofotografiapm1','textfhidden'), delClass('fechatextomeio','textfhidden'), delClass('textofotografiapm2','textfhidden'), delClass('textofotografiapm3','textfhidden'), addClass('leiasobrefotografiameio', 'd-none'), addClass('animationwrapm', 'slideup')">
+                            onclick="delClass('textofotografiapm1','textfhidden'), delClass('fechatextomeio','textfhidden'), delClass('textofotografiapm2','textfhidden'), delClass('textofotografiapm3','textfhidden'), addClass('leiasobrefotografiameio', 'd-none'), addClass('animationwrapm', 'slideup'), delClass('animationwrapm', 'd-none')">
                             leia sobre</p>
-                        <div id="animationwrapm">
+                        <div id="animationwrapm" class="d-none">
                             <p id="textofotografiapm1" class="me-5 textofotografia textfhidden"><span
                                     class="purple">Cliente:</span> Tempero da
                                 Vila<br>
@@ -205,7 +205,7 @@
                                 rústico
                                 e caseiro!</p>
                             <p id="fechatextomeio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextomeio', 'textfhidden'), addClass('textofotografiapm1','textfhidden'), addClass('textofotografiapm2','textfhidden'), addClass('textofotografiapm3','textfhidden'), delClass('leiasobrefotografiameio', 'd-none'), delClass('animationwrapm', 'slideup')">
+                                onclick="addClass('fechatextomeio', 'textfhidden'), addClass('textofotografiapm1','textfhidden'), addClass('textofotografiapm2','textfhidden'), addClass('textofotografiapm3','textfhidden'), delClass('leiasobrefotografiameio', 'd-none'), delClass('animationwrapm', 'slideup'), addClass('animationwrapm', 'd-none')">
                                 fechar</p>
                         </div>
                     </div>
@@ -241,9 +241,9 @@
                         <p id="leiasobrefotografiadireita" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiadireita', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiadireita', 'blue-nt')"
-                            onclick="delClass('fechatextodireita', 'textfhidden'), delClass('textofotografiapd1','textfhidden'), delClass('textofotografiapd2','textfhidden'), addClass('leiasobrefotografiadireita', 'd-none'), addClass('animationwrapd', 'slideup')">
+                            onclick="delClass('fechatextodireita', 'textfhidden'), delClass('textofotografiapd1','textfhidden'), delClass('textofotografiapd2','textfhidden'), addClass('leiasobrefotografiadireita', 'd-none'), addClass('animationwrapd', 'slideup'), delClass('animationwrapd', 'd-none')">
                             leia sobre</p>
-                        <div id="animationwrapd">
+                        <div id="animationwrapd" class="d-none">
                             <p id="textofotografiapd1" class="me-5 textofotografia textfhidden">
                                 <span class="purple">Cliente:</span> Blittzen<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
@@ -255,7 +255,7 @@
                                 tiveram
                                 nessa época do ano e cenários produzidos.</p>
                             <p id="fechatextodireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextodireita', 'textfhidden'), addClass('textofotografiapd1','textfhidden'), addClass('textofotografiapd2','textfhidden'), delClass('leiasobrefotografiadireita', 'd-none'), delClass('animationwrapd', 'slideup')">
+                                onclick="addClass('fechatextodireita', 'textfhidden'), addClass('textofotografiapd1','textfhidden'), addClass('textofotografiapd2','textfhidden'), delClass('leiasobrefotografiadireita', 'd-none'), delClass('animationwrapd', 'slideup'), addClass('animationwrapd', 'd-none')">
                                 fechar</p>
                         </div>
                     </div>

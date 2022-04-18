@@ -117,18 +117,18 @@ function fecharProjetos(x) {
 
 // inicia / para slides 
 
-function iniciaSlides(x,y) {
+function iniciaSlides(x, y) {
     addClass(`slides${x}${y}`, 'slides');
     delClass(`leiasobre${x}${y}`, 'text-hidden');
 }
 
-function paraSlides(x,y) {
+function paraSlides(x, y) {
     delClass(`slides${x}${y}`, 'slides');
 }
 
 // exibir / ocultar textos 
 
-function exibeTextosProjeto(x,y) {
+function exibeTextosProjeto(x, y) {
     delClass(`fechatexto${x}${y}`, 'textfhidden');
     delClass(`texto${x}${y}p1`, 'textfhidden');
     delClass(`texto${x}${y}p2`, 'textfhidden');
@@ -138,7 +138,7 @@ function exibeTextosProjeto(x,y) {
     delClass(`animationwrap${x}${y}`, 'd-none');
 }
 
-function fechaTextosProjeto(x,y) {
+function fechaTextosProjeto(x, y) {
     addClass(`fechatexto${x}${y}`, 'textfhidden');
     addClass(`texto${x}${y}p1`, 'textfhidden');
     addClass(`texto${x}${y}p2`, 'textfhidden');
@@ -146,4 +146,20 @@ function fechaTextosProjeto(x,y) {
     delClass(`leiasobre${x}${y}`, 'd-none');
     delClass(`animationwrap${x}${y}`, 'slideup');
     addClass(`animationwrap${x}${y}`, 'd-none');
+}
+
+// play / stop autoplay videos
+
+function playVideo(x) {
+    var video = document.getElementById(x)
+    video.play();
+    delClass(x, 'videoslide');
+    addClass(x, 'videoslideon')
+}
+
+function stopVideo(x) {
+    var video = document.getElementById(x)
+    video.pause();
+    delClass(x, 'videoslideon');
+    addClass(x, 'videoslide')
 }

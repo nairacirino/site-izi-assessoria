@@ -1118,3 +1118,16 @@ header {
 #ctanimacao {
     height: 100%;
 }
+
+.videoslide {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.videoslideon {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0);
+}
+

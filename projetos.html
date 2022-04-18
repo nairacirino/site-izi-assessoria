@@ -86,6 +86,7 @@
                     src="./assets/media/img/Faixa-degrade-texto.png" alt="">
             </div>
         </div>
+
         <!--projeto 1 fotografia-->
         <div id="fotografia" class="wrap-projetos mb-1">
             <header class="project-header">
@@ -138,13 +139,15 @@
                                 Dale<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
                             </p>
-                            <p id="textofotografiaesquerdap2" class="me-5 mt-3 textofotografia textfhidden">Para esta empresa
+                            <p id="textofotografiaesquerdap2" class="me-5 mt-3 textofotografia textfhidden">Para esta
+                                empresa
                                 tradicional de
                                 São
                                 Paulo que tem mais de 30 anos de existência no mercado,
                                 desenvolvemos shootings de produtos em formato Still para e-commerce, fotografia
                                 publicitária para as mídias digitais e campanhas.</p>
-                            <p id="textofotografiaesquerdap3" class="me-5 textofotografia textfhidden">Na sessão de fotos
+                            <p id="textofotografiaesquerdap3" class="me-5 textofotografia textfhidden">Na sessão de
+                                fotos
                                 seguimos
                                 uma
                                 linguagem clássica para trazer toda a essência da marca no
@@ -159,8 +162,7 @@
                 <!--fim item da esquerda-->
                 <!--item do meio-->
                 <div id="fotografiameiowrap" class="item col-md-4 mb-5 div-hidden"
-                onmouseover="iniciaSlides('fotografia', 'meio')"
-                onmouseout="paraSlides('fotografia', 'meio')">
+                    onmouseover="iniciaSlides('fotografia', 'meio')" onmouseout="paraSlides('fotografia', 'meio')">
                     <!--imagens do meio-->
                     <div id="slidesfotografiameio" class="projeto-img-meio-container">
                         <ul>
@@ -248,13 +250,14 @@
                                 <span class="purple">Cliente:</span> Blittzen<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
                             </p>
-                            <p id="textofotografiadireitap2" class="me-5 mt-3 textofotografia textfhidden">Com toda a sua
+                            <p id="textofotografiadireitap2" class="me-5 mt-3 textofotografia textfhidden">Com toda a
+                                sua
                                 magia e
                                 encanto natalino a Blittzen buscou nossos olhares para uma sessão de fotos externa nos
                                 shoppings de São Paulo e região, registrando toda a experiência que seus clientes
                                 tiveram
                                 nessa época do ano e cenários produzidos.</p>
-                                <p id="textofotografiadireitap3" class="me-5 mt-3 textofotografia textfhidden d-none"></p>
+                            <p id="textofotografiadireitap3" class="me-5 mt-3 textofotografia textfhidden d-none"></p>
                             <p id="fechatextofotografiadireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
                                 onclick="fechaTextosProjeto('fotografia', 'direita')">
                                 fechar</p>
@@ -265,6 +268,574 @@
             </div>
         </div>
         <!--fim fotografia-->
+
+        <!--projeto 2 filmmaker-->
+        <div id="filmmaker" class="wrap-projetos mb-1">
+            <header class="project-header">
+                <h3 class="text-center pointer project-title"
+                    onmouseover="delClass('abrirmaisfilmmakeresquerda', 'text-hidden')">filmmaker</h3>
+                <p id="abrirmaisfilmmakeresquerda" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="abrirProjetos('filmmaker')">
+                    abrir mais</p>
+                <p id="fecharfilmmaker" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="fecharProjetos('filmmaker')">
+                    fechar</p>
+            </header>
+            <!--fileira de projetos de filmmaker-->
+            <div class="bloco d-flex justify-content-between flex-wrap">
+                <!--item da esquerda-->
+                <div id="filmmakeresquerdawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videofilmmakeresquerda')" onmouseout="stopVideo('videofilmmakeresquerda')">
+                    <!--imagens da esquerda-->
+                    <div id="slidesfilmmakeresquerda" class="projeto-img-esquerda-container"
+                        onmouseover="delClass('leiasobrefilmmakeresquerda', 'text-hidden')">
+                        <video id="videofilmmakeresquerda" class="videoslide" poster="">
+                            <source src="./assets/media/img/projetos/filmmaker/Projetos-filmmaker-esquerda-imagem01.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <!--fim das imagens da esquerda-->
+                    <!--textos da esquerda-->
+                    <div>
+                        <p id="leiasobrefilmmakeresquerda" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrefilmmakeresquerda', 'blue-nt')"
+                            onmouseout="delClass('leiasobrefilmmakeresquerda', 'blue-nt')"
+                            onclick="exibeTextosProjeto('filmmaker', 'esquerda')">
+                            leia sobre</p>
+                        <div id="animationwrapfilmmakeresquerda" class="d-none">
+                            <p id="textofilmmakeresquerdap1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Dashboard<br>
+                                <span class="purple">Projeto:</span> Filmagem, Edição e Pós Produção
+                            </p>
+                            <p id="textofilmmakeresquerdap2" class="me-5 mt-3 textofotografia textfhidden">Para esse projeto, o coletivo Dashboard nos convidou para realizar a gravação, edição e pós produção do seu material audiovisual. Estamos presentes em todas as edições, cuidando de cada detalhe!</p>
+                            <p id="textofilmmakeresquerdap3" class="me-5 textofotografia textfhidden">Cada cena gravada foi estudada para que o material pudesse refletir a identidade e o posicionamento do coletivo.</p>
+                            <p id="fechatextofilmmakeresquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('filmmaker', 'esquerda')">
+                                fechar</p>
+                        </div>
+                    </div>
+                    <!--fim dos textos da esquerda-->
+                </div>
+                <!--fim item da esquerda-->
+                <!--item do meio-->
+                <div id="filmmakermeiowrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videofilmmakermeio')" onmouseout="stopVideo('videofilmmakermeio')">
+                    <!--imagens do meio-->
+                    <div id="slidesfilmmakermeio" class="projeto-img-meio-container"
+                        onmouseover="delClass('leiasobrefilmmakermeio', 'text-hidden')">
+                        <ul>
+                            <li>
+                                <video id="videofilmmakermeio" class="videoslide" poster="">
+                                    <source
+                                        src="./assets/media/img/projetos/filmmaker/Projetos-filmmaker-centro-imagem01.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens do meio-->
+                    <!--textos do meio-->
+                    <div class="ms-1">
+                        <p id="leiasobrefilmmakermeio" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrefilmmakermeio', 'blue-nt')"
+                            onmouseout="delClass('leiasobrefilmmakermeio', 'blue-nt')"
+                            onclick="exibeTextosProjeto('filmmaker', 'meio')">
+                            leia sobre</p>
+                        <div id="animationwrapfilmmakermeio" class="d-none">
+                            <p id="textofilmmakermeiop1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Paola Vertullo<br>
+                                <span class="purple">Projeto:</span> Edição e Motion Design
+                            </p>
+                            <p id="textofilmmakermeiop2" class="me-5 mt-3 textofotografia textfhidden">Quando nos surgiu a proposta ficamos empolgados com o que viria a seguir. Pudemos desenvolver uma estética inovadora e profissional para o canal do Youtube e Instagram da Paola. Levando nossas experiências para o mundo dos digitais influencers, oferecendo serviços de edição e animação de efeitos visuais.</p>
+                            <p id="textofilmmakermeiop3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextofilmmakermeio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('filmmaker', 'meio')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item do meio-->
+                <!--item da direita-->
+                <div id="filmmakerdireitawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videofilmmakerdireita')" onmouseout="stopVideo('videofilmmakerdireita')">
+                    <!--imagens direita-->
+                    <div id="slidesfilmmakerdireita" class="projeto-img-direita-container"
+                        onmouseover="delClass('leiasobrefilmmakerdireita', 'text-hidden')">
+                        <ul>
+                            <li>
+                                <video id="videofilmmakerdireita" class="videoslide" poster="">
+                                    <source
+                                        src="./assets/media/img/projetos/filmmaker/Projetos-filmmaker-direita-imagem01.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da direita-->
+                    <!--textos da direita-->
+                    <div class="ms-2">
+                        <p id="leiasobrefilmmakerdireita" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrefilmmakerdireita', 'blue-nt')"
+                            onmouseout="delClass('leiasobrefilmmakerdireita', 'blue-nt')"
+                            onclick="exibeTextosProjeto('filmmaker', 'direita')">
+                            leia sobre</p>
+                        <div id="animationwrapfilmmakerdireita" class="d-none">
+                            <p id="textofilmmakerdireitap1" class="me-5 textofotografia textfhidden">
+                                <span class="purple">Cliente:</span> Blittzen<br>
+                                <span class="purple">Projeto:</span> Filmagem, Edição e Pós Produção
+                            </p>
+                            <p id="textofilmmakerdireitap2" class="me-5 mt-3 textofotografia textfhidden">Além do serviço de fotografia, a Blittzen nos procurou para fazer o trabalho de filmagem e edição dos vídeos das suas decorações de Natal em shoppings de São Paulo.</p>
+                            <p id="textofilmmakerdireitap3" class="me-5 mt-3 textofotografia textfhidden">Assim como as fotos, a marca inseriu o material de vídeo como parte do portfólio para mostrar suas novidades e coleções desse ano.</p>
+                            <p id="fechatextofilmmakerdireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('filmmaker', 'direita')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item-->
+            </div>
+        </div>
+        <!--fim filmmaker-->
+
+        <!--projeto 3 socialmedia-->
+        <div id="socialmedia" class="wrap-projetos mb-1">
+            <header class="project-header">
+                <h3 class="text-center pointer project-title"
+                    onmouseover="delClass('abrirmaissocialmediaesquerda', 'text-hidden')">social media</h3>
+                <p id="abrirmaissocialmediaesquerda" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="abrirProjetos('socialmedia')">
+                    abrir mais</p>
+                <p id="fecharsocialmedia" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="fecharProjetos('socialmedia')">
+                    fechar</p>
+            </header>
+            <!--fileira de projetos de socialmedia-->
+            <div class="bloco d-flex justify-content-between flex-wrap">
+                <!--item da esquerda-->
+                <div id="socialmediaesquerdawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videosocialmediaesquerda')"
+                    onmouseout="stopVideo('videosocialmediaesquerda')">
+                    <!--imagens da esquerda-->
+                    <div id="slidessocialmediaesquerda" class="projeto-img-esquerda-container"
+                        onmouseover="delClass('leiasobresocialmediaesquerda', 'text-hidden')">
+                        <video id="videosocialmediaesquerda" class="videoslide" poster="">
+                            <source
+                                src="./assets/media/img/projetos/socialmedia/Projetos-socialmedia-ladoesquerdo-imagem01.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <!--fim das imagens da esquerda-->
+                    <!--textos da esquerda-->
+                    <div>
+                        <p id="leiasobresocialmediaesquerda" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobresocialmediaesquerda', 'blue-nt')"
+                            onmouseout="delClass('leiasobresocialmediaesquerda', 'blue-nt')"
+                            onclick="exibeTextosProjeto('socialmedia', 'esquerda')">
+                            leia sobre</p>
+                        <div id="animationwrapsocialmediaesquerda" class="d-none">
+                            <p id="textosocialmediaesquerdap1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> AS Dermopigmentação<br>
+                                <span class="purple">Projeto:</span> Social Media
+                            </p>
+                            <p id="textosocialmediaesquerdap2" class="me-5 mt-3 textofotografia textfhidden">A AS Dermopigmentação chegou com uma necessidade de explorar mais sua identidade nas redes sociais e mostrar com mais profissionalismo seus serviços estéticos prestados em Arujá/São Paulo e nos Estados Unidos/Califórnia. Desenvolvemos todo o layout e montamos o cronograma de publicações para Feed, Reels e Stories.</p>
+                            <p id="textosocialmediaesquerdap3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextosocialmediaesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('socialmedia', 'esquerda')">
+                                fechar</p>
+                        </div>
+                    </div>
+                    <!--fim dos textos da esquerda-->
+                </div>
+                <!--fim item da esquerda-->
+                <!--item do meio-->
+                <div id="socialmediameiowrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videosocialmediameio')" onmouseout="stopVideo('videosocialmediameio')">
+                    <!--imagens do meio-->
+                    <div id="slidessocialmediameio" class="projeto-img-meio-container"
+                        onmouseover="delClass('leiasobresocialmediameio', 'text-hidden')">
+                        <ul>
+                            <li>
+                                <video id="videosocialmediameio" class="videoslide" poster="">
+                                    <source
+                                        src="./assets/media/img/projetos/socialmedia/Projetos-socialmedia-centro.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens do meio-->
+                    <!--textos do meio-->
+                    <div class="ms-1">
+                        <p id="leiasobresocialmediameio" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobresocialmediameio', 'blue-nt')"
+                            onmouseout="delClass('leiasobresocialmediameio', 'blue-nt')"
+                            onclick="exibeTextosProjeto('socialmedia', 'meio')">
+                            leia sobre</p>
+                        <div id="animationwrapsocialmediameio" class="d-none">
+                            <p id="textosocialmediameiop1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Dashboard<br>
+                                <span class="purple">Projeto:</span> Social Media
+                            </p>
+                            <p id="textosocialmediameiop2" class="me-5 mt-3 textofotografia textfhidden">O coletivo Dashboard traz muita personalidade em seus conteúdos orgânicos, com isso a versatilidade das suas publicações gera um grande alcance dentro das plataformas digitais.</p>
+                            <p id="textosocialmediameiop3" class="me-5 textofotografia textfhidden">É um projeto que deixa sua gestão bem dinâmica com materiais para Reels, IGTV, Stories e edições fonográficas para o Streaming.</p>
+                            <p id="fechatextosocialmediameio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('socialmedia', 'meio')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item do meio-->
+                <!--item da direita-->
+                <div id="socialmediadireitawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="playVideo('videosocialmediadireita')"
+                    onmouseout="stopVideo('videosocialmediadireita')">
+                    <!--imagens direita-->
+                    <div id="slidessocialmediadireita" class="projeto-img-direita-container"
+                        onmouseover="delClass('leiasobresocialmediadireita', 'text-hidden')">
+                        <ul>
+                            <li>
+                                <video id="videosocialmediadireita" class="videoslide" poster="">
+                                    <source
+                                        src="./assets/media/img/projetos/socialmedia/Projetos-socialmedia-ladodireito-imagem01.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da direita-->
+                    <!--textos da direita-->
+                    <div class="ms-2">
+                        <p id="leiasobresocialmediadireita" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobresocialmediadireita', 'blue-nt')"
+                            onmouseout="delClass('leiasobresocialmediadireita', 'blue-nt')"
+                            onclick="exibeTextosProjeto('socialmedia', 'direita')">
+                            leia sobre</p>
+                        <div id="animationwrapsocialmediadireita" class="d-none">
+                            <p id="textosocialmediadireitap1" class="me-5 textofotografia textfhidden">
+                                <span class="purple">Cliente:</span> Cecilia Dale<br>
+                                <span class="purple">Projeto:</span> Social Media
+                            </p>
+                            <p id="textosocialmediadireitap2" class="me-5 mt-3 textofotografia textfhidden">A loja Cecilia Dale já veio com experiências anteriores nesse setor digital, então adaptamos o cronograma de publicações dando nosso toque mas sem perder a identidade da marca.</p>
+                            <p id="textosocialmediadireitap3" class="me-5 mt-3 textofotografia textfhidden">Criamos e planejamos todas as publicações para o Facebook e Instagram com campanhas pagas e hoje somos responsáveis por toda comunicação digital da empresa.</p>
+                            <p id="fechatextosocialmediadireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('socialmedia', 'direita')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item-->
+            </div>
+        </div>
+        <!--fim socialmedia-->
+
+        <!--projeto 4 branding-->
+        <div id="branding" class="wrap-projetos mb-1">
+            <header class="project-header">
+                <h3 class="text-center pointer project-title"
+                    onmouseover="delClass('abrirmaisbrandingesquerda', 'text-hidden')">branding</h3>
+                <p id="abrirmaisbrandingesquerda" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="abrirProjetos('branding')">
+                    abrir mais</p>
+                <p id="fecharbranding" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="fecharProjetos('branding')">
+                    fechar</p>
+            </header>
+            <!--fileira de projetos de branding-->
+            <div class="bloco d-flex justify-content-between flex-wrap">
+                <!--item da esquerda-->
+                <div id="brandingesquerdawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('branding', 'esquerda')" onmouseout="paraSlides('branding', 'esquerda')">
+                    <!--imagens da esquerda-->
+                    <div id="slidesbrandingesquerda" class="projeto-img-esquerda-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-esquerda-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-esquerda-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-esquerda-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da esquerda-->
+                    <!--textos da esquerda-->
+                    <div>
+                        <p id="leiasobrebrandingesquerda" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrebrandingesquerda', 'blue-nt')"
+                            onmouseout="delClass('leiasobrebrandingesquerda', 'blue-nt')"
+                            onclick="exibeTextosProjeto('branding', 'esquerda')">
+                            leia sobre</p>
+                        <div id="animationwrapbrandingesquerda" class="d-none">
+                            <p id="textobrandingesquerdap1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Capan<br>
+                                <span class="purple">Projeto:</span> Branding
+                            </p>
+                            <p id="textobrandingesquerdap2" class="me-5 mt-3 textofotografia textfhidden">Recém criada, a Capan Turn Key nos procurou para desenvolver e assinar sua identidade visual. A marca tem como principal valor, sua forma tradicional e clássica na produção de pães e gestão industrial, e era dessa forma como ela precisava se comunicar e conversar com seus clientes e colaboradores.</p>
+                            <p id="textobrandingesquerdap3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextobrandingesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('branding', 'esquerda')">
+                                fechar</p>
+                        </div>
+                    </div>
+                    <!--fim dos textos da esquerda-->
+                </div>
+                <!--fim item da esquerda-->
+                <!--item do meio-->
+                <div id="brandingmeiowrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('branding', 'meio')" onmouseout="paraSlides('branding', 'meio')">
+                    <!--imagens do meio-->
+                    <div id="slidesbrandingmeio" class="projeto-img-meio-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-centro-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-centro-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-centro-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens do meio-->
+                    <!--textos do meio-->
+                    <div class="ms-1">
+                        <p id="leiasobrebrandingmeio" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrebrandingmeio', 'blue-nt')"
+                            onmouseout="delClass('leiasobrebrandingmeio', 'blue-nt')"
+                            onclick="exibeTextosProjeto('branding', 'meio')">
+                            leia sobre</p>
+                        <div id="animationwrapbrandingmeio" class="d-none">
+                            <p id="textobrandingmeiop1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Bianca Mendes Arquitetura<br>
+                                <span class="purple">Projeto:</span> Branding e Naming
+                            </p>
+                            <p id="textobrandingmeiop2" class="me-5 mt-3 textofotografia textfhidden">O escritório de arquitetura da Bianca Mendes cria projetos que envolvem e conectam a natureza e a modernidade em um único espaço. E foi essa a intenção no desenvolvimento da identidade e comunicação da marca, fazendo com que as cores, símbolos e formas estivessem interligadas e se completando entre si.</p>
+                            <p id="textobrandingmeiop3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextobrandingmeio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('branding', 'meio')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item do meio-->
+                <!--item da direita-->
+                <div id="brandingdireitawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('branding', 'direita')" onmouseout="paraSlides('branding', 'direita')">
+                    <!--imagens direita-->
+                    <div id="slidesbrandingdireita" class="projeto-img-direita-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-direita-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-direita-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/branding/Projetos-branding-direita-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da direita-->
+                    <!--textos da direita-->
+                    <div class="ms-2">
+                        <p id="leiasobrebrandingdireita" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobrebrandingdireita', 'blue-nt')"
+                            onmouseout="delClass('leiasobrebrandingdireita', 'blue-nt')"
+                            onclick="exibeTextosProjeto('branding', 'direita')">
+                            leia sobre</p>
+                        <div id="animationwrapbrandingdireita" class="d-none">
+                            <p id="textobrandingdireitap1" class="me-5 textofotografia textfhidden">
+                                <span class="purple">Cliente:</span> PL Med<br>
+                                <span class="purple">Projeto:</span> Rebranding
+                            </p>
+                            <p id="textobrandingdireitap2" class="me-5 mt-3 textofotografia textfhidden">Com o intuito de se renovar, a PL Med, uma distribuidora e revendedora de equipamentos médicos e cirúrgicos nos procurou para dar uma cara nova para a marca. Assinamos o rebranding e todo seu manual de identidade visual, garantindo a modernidade que idealizaram para essa nova fase da empresa.</p>
+                            <p id="textobrandingdireitap3" class="me-5 mt-3 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextobrandingdireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('branding', 'direita')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item-->
+            </div>
+        </div>
+        <!--fim branding-->
+
+        <!--projeto 5 design-->
+        <div id="design" class="wrap-projetos mb-1">
+            <header class="project-header">
+                <h3 class="text-center pointer project-title"
+                    onmouseover="delClass('abrirmaisdesignesquerda', 'text-hidden')">design</h3>
+                <p id="abrirmaisdesignesquerda" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="abrirProjetos('design')">
+                    abrir mais</p>
+                <p id="fechardesign" class="text-center mb-7 pointer abrirmais text-hidden"
+                    onclick="fecharProjetos('design')">
+                    fechar</p>
+            </header>
+            <!--fileira de projetos de design-->
+            <div class="bloco d-flex justify-content-between flex-wrap">
+                <!--item da esquerda-->
+                <div id="designesquerdawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('design', 'esquerda')" onmouseout="paraSlides('design', 'esquerda')">
+                    <!--imagens da esquerda-->
+                    <div id="slidesdesignesquerda" class="projeto-img-esquerda-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-esquerda-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-esquerda-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-esquerda-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da esquerda-->
+                    <!--textos da esquerda-->
+                    <div>
+                        <p id="leiasobredesignesquerda" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobredesignesquerda', 'blue-nt')"
+                            onmouseout="delClass('leiasobredesignesquerda', 'blue-nt')"
+                            onclick="exibeTextosProjeto('design', 'esquerda')">
+                            leia sobre</p>
+                        <div id="animationwrapdesignesquerda" class="d-none">
+                            <p id="textodesignesquerdap1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Variados<br>
+                                <span class="purple">Projeto:</span> Cartões de visita
+                            </p>
+                            <p id="textodesignesquerdap2" class="me-5 mt-3 textofotografia textfhidden">O processo de desenvolvimento de um cartão de vista vai além do design, é entender também sua utilidade e para quem será destinado. Do cartão físico ao digital, cada um tem sua finalidade. Um meio de comunicação ainda muito eficaz dentro das pequenas e grandes empresas. </p>
+                            <p id="textodesignesquerdap3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextodesignesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('design', 'esquerda')">
+                                fechar</p>
+                        </div>
+                    </div>
+                    <!--fim dos textos da esquerda-->
+                </div>
+                <!--fim item da esquerda-->
+                <!--item do meio-->
+                <div id="designmeiowrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('design', 'meio')" onmouseout="paraSlides('design', 'meio')">
+                    <!--imagens do meio-->
+                    <div id="slidesdesignmeio" class="projeto-img-meio-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-centro-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-centro-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-centro-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens do meio-->
+                    <!--textos do meio-->
+                    <div class="ms-1">
+                        <p id="leiasobredesignmeio" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobredesignmeio', 'blue-nt')"
+                            onmouseout="delClass('leiasobredesignmeio', 'blue-nt')"
+                            onclick="exibeTextosProjeto('design', 'meio')">
+                            leia sobre</p>
+                        <div id="animationwrapdesignmeio" class="d-none">
+                            <p id="textodesignmeiop1" class="me-5 textofotografia textfhidden"><span
+                                    class="purple">Cliente:</span> Variados<br>
+                                <span class="purple">Projeto:</span> Publicações Redes Sociais
+                            </p>
+                            <p id="textodesignmeiop2" class="me-5 mt-3 textofotografia textfhidden">É a comunicação da empresa no mundo digital, as publicações podem conter diversas finalidades, desde comunicar o cliente ou vender um produto ou serviço, as possibilidades são infinitas.</p>
+                            <p id="textodesignmeiop3" class="me-5 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextodesignmeio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('design', 'meio')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item do meio-->
+                <!--item da direita-->
+                <div id="designdireitawrap" class="item col-md-4 mb-5 div-hidden"
+                    onmouseover="iniciaSlides('design', 'direita')" onmouseout="paraSlides('design', 'direita')">
+                    <!--imagens direita-->
+                    <div id="slidesdesigndireita" class="projeto-img-direita-container">
+                        <ul>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-direita-imagem01.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-direita-imagem02.jpg"
+                                    alt="">
+                            </li>
+                            <li>
+                                <img class="img-fluid"
+                                    src="./assets/media/img/projetos/designgrafico/Projetos-designgráfico-direita-imagem03.jpg"
+                                    alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--fim das imagens da direita-->
+                    <!--textos da direita-->
+                    <div class="ms-2">
+                        <p id="leiasobredesigndireita" class="abrirmais pointer text-hidden"
+                            onmouseover="addClass('leiasobredesigndireita', 'blue-nt')"
+                            onmouseout="delClass('leiasobredesigndireita', 'blue-nt')"
+                            onclick="exibeTextosProjeto('design', 'direita')">
+                            leia sobre</p>
+                        <div id="animationwrapdesigndireita" class="d-none">
+                            <p id="textodesigndireitap1" class="me-5 textofotografia textfhidden">
+                                <span class="purple">Cliente:</span> Variados<br>
+                                <span class="purple">Projeto:</span> Material visual empresarial
+                            </p>
+                            <p id="textodesigndireitap2" class="me-5 mt-3 textofotografia textfhidden">Toda empresa necessita de uma boa identidade visual para mostrar suas ideologias e formas de se comunicar para seus colaboradores e clientes. O material visual empresarial traduz toda essa mensagem que a empresa quer passar em suas papelarias, assinaturas de e-mail, panfletos entre outros materiais institucionais. Deixando toda comunicação da marca com a mesma identidade.</p>
+                            <p id="textodesigndireitap3" class="me-5 mt-3 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextodesigndireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('design', 'direita')">
+                                fechar</p>
+                        </div>
+                    </div>
+                </div>
+                <!--fim item-->
+            </div>
+        </div>
+        <!--fim design-->
+
     </main>
     <!--fim servicos-->
 
@@ -274,7 +845,8 @@
         <!--3 cta inicio-->
         <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
             <p id="cta-texto" class="col-md-8 col-lg-5 big-p text-center contato-link-texto"
-                onmouseover="ctaAparece(ctalink), addClass('cta-texto', 'pointer')">Juntos vamos entender e estudar oportunidades e obstáculos para
+                onmouseover="ctaAparece(ctalink), addClass('cta-texto', 'pointer')">Juntos vamos entender e estudar
+                oportunidades e obstáculos para
                 alcançar
                 os
                 objetivos previstos.</p>

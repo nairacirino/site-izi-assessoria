@@ -87,25 +87,25 @@
             </div>
         </div>
         <!--projeto 1 fotografia-->
-        <div class="wrap-projetos mb-1">
+        <div id="fotografia" class="wrap-projetos mb-1">
             <header class="project-header">
                 <h3 class="text-center pointer project-title"
                     onmouseover="delClass('abrirmaisfotografiaesquerda', 'text-hidden')">fotografia</h3>
                 <p id="abrirmaisfotografiaesquerda" class="text-center mb-7 pointer abrirmais text-hidden"
-                    onclick="delClass('fecharfotografia', 'd-none'), delClass('fotografiaesquerdawrap', 'div-hidden'), delClass('fecharfotografia', 'text-hidden'), addClass('abrirmaisfotografiaesquerda', 'd-none'), delClass('fotografiameiowrap', 'div-hidden'), delClass('fotografiadireitawrap', 'div-hidden')">
+                    onclick="abrirProjetos('fotografia')">
                     abrir mais</p>
                 <p id="fecharfotografia" class="text-center mb-7 pointer abrirmais text-hidden"
-                    onclick="addClass('fotografiaesquerdawrap', 'div-hidden'), addClass('fotografiameiowrap', 'div-hidden'), addClass('fotografiadireitawrap', 'div-hidden'), addClass('fecharfotografia', 'd-none'), delClass('abrirmaisfotografiaesquerda', 'd-none'), addClass('abrirmaisfotografiaesquerda', 'text-hidden')">
+                    onclick="fecharProjetos('fotografia')">
                     fechar</p>
             </header>
             <!--fileira de projetos de fotografia-->
             <div class="bloco d-flex justify-content-between flex-wrap">
                 <!--item da esquerda-->
                 <div id="fotografiaesquerdawrap" class="item col-md-4 mb-5 div-hidden"
-                    onmouseover="addClass('testepaiesquerda', 'slides'), delClass('leiasobrefotografiaesquerda', 'text-hidden')"
-                    onmouseout="delClass('testepaiesquerda', 'slides')">
+                    onmouseover="iniciaSlides('fotografia', 'esquerda')"
+                    onmouseout="paraSlides('fotografia', 'esquerda')">
                     <!--imagens da esquerda-->
-                    <div id="testepaiesquerda" class="projeto-img-esquerda-container">
+                    <div id="slidesfotografiaesquerda" class="projeto-img-esquerda-container">
                         <ul>
                             <li>
                                 <img class="img-fluid"
@@ -130,27 +130,27 @@
                         <p id="leiasobrefotografiaesquerda" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiaesquerda', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiaesquerda', 'blue-nt')"
-                            onclick="delClass('fechatextoesquerda', 'textfhidden'), delClass('textofotografiape1','textfhidden'), delClass('textofotografiape2','textfhidden'), delClass('textofotografiape3','textfhidden'), addClass('leiasobrefotografiaesquerda', 'd-none'), addClass('animationwrape', 'slideup'), delClass('animationwrape', 'd-none')">
+                            onclick="exibeTextosProjeto('fotografia', 'esquerda')">
                             leia sobre</p>
-                        <div id="animationwrape" class="d-none">
-                            <p id="textofotografiape1" class="me-5 textofotografia textfhidden"><span
+                        <div id="animationwrapfotografiaesquerda" class="d-none">
+                            <p id="textofotografiaesquerdap1" class="me-5 textofotografia textfhidden"><span
                                     class="purple">Cliente:</span> Cecilia
                                 Dale<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
                             </p>
-                            <p id="textofotografiape2" class="me-5 mt-3 textofotografia textfhidden">Para esta empresa
+                            <p id="textofotografiaesquerdap2" class="me-5 mt-3 textofotografia textfhidden">Para esta empresa
                                 tradicional de
                                 São
                                 Paulo que tem mais de 30 anos de existência no mercado,
                                 desenvolvemos shootings de produtos em formato Still para e-commerce, fotografia
                                 publicitária para as mídias digitais e campanhas.</p>
-                            <p id="textofotografiape3" class="me-5 textofotografia textfhidden">Na sessão de fotos
+                            <p id="textofotografiaesquerdap3" class="me-5 textofotografia textfhidden">Na sessão de fotos
                                 seguimos
                                 uma
                                 linguagem clássica para trazer toda a essência da marca no
                                 mundo digital.</p>
-                            <p id="fechatextoesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextoesquerda', 'textfhidden'), addClass('textofotografiape1','textfhidden'), addClass('textofotografiape2','textfhidden'), addClass('textofotografiape3','textfhidden'), delClass('leiasobrefotografiaesquerda', 'd-none'), delClass('animationwrape', 'slideup'), addClass('animationwrape', 'd-none')">
+                            <p id="fechatextofotografiaesquerda" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('fotografia', 'esquerda')">
                                 fechar</p>
                         </div>
                     </div>
@@ -159,10 +159,10 @@
                 <!--fim item da esquerda-->
                 <!--item do meio-->
                 <div id="fotografiameiowrap" class="item col-md-4 mb-5 div-hidden"
-                    onmouseover="addClass('testepaimeio', 'slides'), delClass('leiasobrefotografiameio', 'text-hidden')"
-                    onmouseout="delClass('testepaimeio', 'slides')">
+                onmouseover="iniciaSlides('fotografia', 'meio')"
+                onmouseout="paraSlides('fotografia', 'meio')">
                     <!--imagens do meio-->
-                    <div id="testepaimeio" class="projeto-img-meio-container">
+                    <div id="slidesfotografiameio" class="projeto-img-meio-container">
                         <ul>
                             <li>
                                 <img class="img-fluid"
@@ -187,25 +187,25 @@
                         <p id="leiasobrefotografiameio" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiameio', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiameio', 'blue-nt')"
-                            onclick="delClass('textofotografiapm1','textfhidden'), delClass('fechatextomeio','textfhidden'), delClass('textofotografiapm2','textfhidden'), delClass('textofotografiapm3','textfhidden'), addClass('leiasobrefotografiameio', 'd-none'), addClass('animationwrapm', 'slideup'), delClass('animationwrapm', 'd-none')">
+                            onclick="exibeTextosProjeto('fotografia', 'meio')">
                             leia sobre</p>
-                        <div id="animationwrapm" class="d-none">
-                            <p id="textofotografiapm1" class="me-5 textofotografia textfhidden"><span
+                        <div id="animationwrapfotografiameio" class="d-none">
+                            <p id="textofotografiameiop1" class="me-5 textofotografia textfhidden"><span
                                     class="purple">Cliente:</span> Tempero da
                                 Vila<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
                             </p>
-                            <p id="textofotografiapm2" class="me-5 mt-3 textofotografia textfhidden">O restaurante
+                            <p id="textofotografiameiop2" class="me-5 mt-3 textofotografia textfhidden">O restaurante
                                 Tempero
                                 da
                                 Vila buscou a IZI Assessoria para criar todo o conteúdo institucional da empresa, assim
                                 como
                                 suas fotos para cardápio, mídias digitais e impressas.</p>
-                            <p id="textofotografiapm3" class="me-5 textofotografia textfhidden">Criando um conceito
+                            <p id="textofotografiameiop3" class="me-5 textofotografia textfhidden">Criando um conceito
                                 rústico
                                 e caseiro!</p>
-                            <p id="fechatextomeio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextomeio', 'textfhidden'), addClass('textofotografiapm1','textfhidden'), addClass('textofotografiapm2','textfhidden'), addClass('textofotografiapm3','textfhidden'), delClass('leiasobrefotografiameio', 'd-none'), delClass('animationwrapm', 'slideup'), addClass('animationwrapm', 'd-none')">
+                            <p id="fechatextofotografiameio" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('fotografia', 'meio')">
                                 fechar</p>
                         </div>
                     </div>
@@ -213,10 +213,10 @@
                 <!--fim item do meio-->
                 <!--item da direita-->
                 <div id="fotografiadireitawrap" class="item col-md-4 mb-5 div-hidden"
-                    onmouseover="addClass('testepaidireita', 'slides'), delClass('leiasobrefotografiadireita', 'text-hidden')"
-                    onmouseout="delClass('testepaidireita', 'slides')">
+                    onmouseover="iniciaSlides('fotografia', 'direita')"
+                    onmouseout="paraSlides('fotografia', 'direita')">
                     <!--imagens direita-->
-                    <div id="testepaidireita" class="projeto-img-direita-container">
+                    <div id="slidesfotografiadireita" class="projeto-img-direita-container">
                         <ul>
                             <li>
                                 <img class="img-fluid"
@@ -241,21 +241,22 @@
                         <p id="leiasobrefotografiadireita" class="abrirmais pointer text-hidden"
                             onmouseover="addClass('leiasobrefotografiadireita', 'blue-nt')"
                             onmouseout="delClass('leiasobrefotografiadireita', 'blue-nt')"
-                            onclick="delClass('fechatextodireita', 'textfhidden'), delClass('textofotografiapd1','textfhidden'), delClass('textofotografiapd2','textfhidden'), addClass('leiasobrefotografiadireita', 'd-none'), addClass('animationwrapd', 'slideup'), delClass('animationwrapd', 'd-none')">
+                            onclick="exibeTextosProjeto('fotografia', 'direita')">
                             leia sobre</p>
-                        <div id="animationwrapd" class="d-none">
-                            <p id="textofotografiapd1" class="me-5 textofotografia textfhidden">
+                        <div id="animationwrapfotografiadireita" class="d-none">
+                            <p id="textofotografiadireitap1" class="me-5 textofotografia textfhidden">
                                 <span class="purple">Cliente:</span> Blittzen<br>
                                 <span class="purple">Projeto:</span> Fotografia e edição
                             </p>
-                            <p id="textofotografiapd2" class="me-5 mt-3 textofotografia textfhidden">Com toda a sua
+                            <p id="textofotografiadireitap2" class="me-5 mt-3 textofotografia textfhidden">Com toda a sua
                                 magia e
                                 encanto natalino a Blittzen buscou nossos olhares para uma sessão de fotos externa nos
                                 shoppings de São Paulo e região, registrando toda a experiência que seus clientes
                                 tiveram
                                 nessa época do ano e cenários produzidos.</p>
-                            <p id="fechatextodireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
-                                onclick="addClass('fechatextodireita', 'textfhidden'), addClass('textofotografiapd1','textfhidden'), addClass('textofotografiapd2','textfhidden'), delClass('leiasobrefotografiadireita', 'd-none'), delClass('animationwrapd', 'slideup'), addClass('animationwrapd', 'd-none')">
+                                <p id="textofotografiadireitap3" class="me-5 mt-3 textofotografia textfhidden d-none"></p>
+                            <p id="fechatextofotografiadireita" class="blue-nt text-end me-5 mt-2 textfhidden pointer"
+                                onclick="fechaTextosProjeto('fotografia', 'direita')">
                                 fechar</p>
                         </div>
                     </div>
@@ -263,7 +264,7 @@
                 <!--fim item-->
             </div>
         </div>
-        <!--fim do item individual-->
+        <!--fim fotografia-->
     </main>
     <!--fim servicos-->
 

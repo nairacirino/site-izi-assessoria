@@ -19,7 +19,6 @@ function trocaTexto(x, y) {
     texto.innerHTML;
 }
 
-
 // funções para hover preto e branco x colorido //
 function pbImg(x) {
     x.style.transition = "2s";
@@ -81,17 +80,70 @@ function delClass(id, classe) {
 }
 
 //
-$(window).on("scroll load",function(){
-	var aparecer = 1; // porcentagem (neste caso, é a metade, 50%)
-	var eleHeight = $('#ctanimacaowrap').outerHeight(); // altura da div
-	var eleTopo = $('#ctanimacaowrap').offset().top; // distancia da div ao topo do documento
-	var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
-	var distance = eleTopo-scrlTopo; // distancia da div ao topo da janela
-	var altJanela = window.innerHeight; // altura da janela
+$(window).on("scroll load", function () {
+    var aparecer = 1; // porcentagem (neste caso, é a metade, 50%)
+    var eleHeight = $('#ctanimacaowrap').outerHeight(); // altura da div
+    var eleTopo = $('#ctanimacaowrap').offset().top; // distancia da div ao topo do documento
+    var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
+    var distance = eleTopo - scrlTopo; // distancia da div ao topo da janela
+    var altJanela = window.innerHeight; // altura da janela
 
-	if(distance <= altJanela-(eleHeight*(aparecer/100))) {
-		addClass('ctanimacao', 'slidectaup')
-	} else {
+    if (distance <= altJanela - (eleHeight * (aparecer / 100))) {
+        addClass('ctanimacao', 'slidectaup')
+    } else {
         delClass('ctanimacao', 'slidectaup')
     }
 });
+
+// abrir / fechar projetos
+
+function abrirProjetos(x) {
+    delClass(`fechar${x}`, 'd-none');
+    delClass(`fechar${x}`, 'text-hidden');
+    addClass(`abrirmais${x}esquerda`, 'd-none');
+    delClass(`${x}esquerdawrap`, 'div-hidden');
+    delClass(`${x}meiowrap`, 'div-hidden');
+    delClass(`${x}direitawrap`, 'div-hidden');
+}
+
+function fecharProjetos(x) {
+    addClass(`${x}esquerdawrap`, 'div-hidden');
+    addClass(`${x}meiowrap`, 'div-hidden');
+    addClass(`${x}direitawrap`, 'div-hidden');
+    addClass(`fechar${x}`, 'd-none');
+    delClass(`abrirmais${x}esquerda`, 'd-none');
+    addClass(`abrirmais${x}esquerda`, 'text-hidden');
+}
+
+// inicia / para slides 
+
+function iniciaSlides(x,y) {
+    addClass(`slides${x}${y}`, 'slides');
+    delClass(`leiasobre${x}${y}`, 'text-hidden');
+}
+
+function paraSlides(x,y) {
+    delClass(`slides${x}${y}`, 'slides');
+}
+
+// exibir / ocultar textos 
+
+function exibeTextosProjeto(x,y) {
+    delClass(`fechatexto${x}${y}`, 'textfhidden');
+    delClass(`texto${x}${y}p1`, 'textfhidden');
+    delClass(`texto${x}${y}p2`, 'textfhidden');
+    delClass(`texto${x}${y}p3`, 'textfhidden');
+    addClass(`leiasobre${x}${y}`, 'd-none');
+    addClass(`animationwrap${x}${y}`, 'slideup');
+    delClass(`animationwrap${x}${y}`, 'd-none');
+}
+
+function fechaTextosProjeto(x,y) {
+    addClass(`fechatexto${x}${y}`, 'textfhidden');
+    addClass(`texto${x}${y}p1`, 'textfhidden');
+    addClass(`texto${x}${y}p2`, 'textfhidden');
+    addClass(`texto${x}${y}p3`, 'textfhidden');
+    delClass(`leiasobre${x}${y}`, 'd-none');
+    delClass(`animationwrap${x}${y}`, 'slideup');
+    addClass(`animationwrap${x}${y}`, 'd-none');
+}

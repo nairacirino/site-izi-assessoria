@@ -1,4 +1,7 @@
-// função substitui imagem
+//SCRIPTS GERAIS
+
+// função para substituição de imagens
+
 function trocaLogo(x) {
     var img = document.getElementById(x);
     img.src = './assets/media/img/logo/logo-nav-topo.png';
@@ -9,17 +12,8 @@ function destrocaLogo(x) {
     img.src = './assets/media/img/logo/logo-nav-topo-b.png';
 }
 
-// substitui texto 
-
-function trocaTexto(x, y) {
-    var texto = document.getElementById(x).value;
-    console.log(texto);
-    texto = y;
-    console.log(texto)
-    texto.innerHTML;
-}
-
 // funções para hover preto e branco x colorido //
+
 function pbImg(x) {
     x.style.transition = "2s";
     x.style.filter = "grayscale(100%)";
@@ -55,7 +49,23 @@ function ctaAparece(x) {
     x.style.opacity = "1";
 }
 
-// slideshow imagens em projetos //
+// animacao de cta
+$(window).on("scroll load", function () {
+    var aparecer = 1; // porcentagem (neste caso, é a metade, 50%)
+    var eleHeight = $('#ctanimacaowrap').outerHeight(); // altura da div
+    var eleTopo = $('#ctanimacaowrap').offset().top; // distancia da div ao topo do documento
+    var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
+    var distance = eleTopo - scrlTopo; // distancia da div ao topo da janela
+    var altJanela = window.innerHeight; // altura da janela
+
+    if (distance <= altJanela - (eleHeight * (aparecer / 100))) {
+        addClass('ctanimacao', 'slidectaup')
+    } else {
+        delClass('ctanimacao', 'slidectaup')
+    }
+});
+
+// funcoes para adicionar ou remover classes
 
 function addClass(id, classe) {
     var elemento = document.getElementById(id);
@@ -79,21 +89,8 @@ function delClass(id, classe) {
     elemento.className = classes.join(' ');
 }
 
-//
-$(window).on("scroll load", function () {
-    var aparecer = 1; // porcentagem (neste caso, é a metade, 50%)
-    var eleHeight = $('#ctanimacaowrap').outerHeight(); // altura da div
-    var eleTopo = $('#ctanimacaowrap').offset().top; // distancia da div ao topo do documento
-    var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
-    var distance = eleTopo - scrlTopo; // distancia da div ao topo da janela
-    var altJanela = window.innerHeight; // altura da janela
 
-    if (distance <= altJanela - (eleHeight * (aparecer / 100))) {
-        addClass('ctanimacao', 'slidectaup')
-    } else {
-        delClass('ctanimacao', 'slidectaup')
-    }
-});
+// SCRIPTS DA PÁGINA PROJETOS.HTML
 
 // abrir / fechar projetos
 
@@ -163,6 +160,9 @@ function stopVideo(x) {
     delClass(x, 'videoslideon');
     addClass(x, 'videoslide')
 }
+
+
+// SCRIPTS DA PAGINA SERVICOS.HTML
 
 // abre o texto descritivo de serviços
 

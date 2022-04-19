@@ -156,7 +156,7 @@ function playVideo(x) {
 
 function stopVideo(x) {
     var video = document.getElementById(x)
-    video.pause();
+    video.load();
     delClass(x, 'videoslideon');
     addClass(x, 'videoslide')
 }

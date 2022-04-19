@@ -37,7 +37,7 @@
                 <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">
                         <img id="logo-expandido" class="img-fluid logo-topo"
-                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa">
+                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-expandido')" onmouseout="destrocaLogo('logo-expandido')">
                     </a></li>
                 <li class="nav-item"><a class="nav-link active" href="infoblog.html">Infoblog</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
@@ -51,7 +51,7 @@
         <div class="d-flex justify-content-between align-items-center">
             <a class="d-md-none d-lg-none" href="#">
                 <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
-                    src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa">
+                    src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa" onmouseover="trocaLogo('logo-dropdown')" onmouseout="destrocaLogo('logo-dropdown')>
             </a>
             <div class="dropdown mt-2">
                 <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
@@ -85,10 +85,10 @@
     <main class="margem-padrao">
         <!--row inicio-->
         <div class="d-flex flex-wrap flex-md-nowrap">
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
                 <img class="img-fluid" src="./assets/media/img/home/home-socialmedia-centro.webp" alt="">
             </div>
-            <div class="col-md-8 ms-5 artigo-texto-sm">
+            <div class="col-md-8 ms-5 artigo-texto-sm d-flex flex-column justify-content-between">
                 <a href="artigo.html">
                     <h3>Lorem ipsum</h3>
                 </a>
@@ -102,7 +102,6 @@
                     exercitationem ipsam
                     voluptas temporibus assumenda rem enim. Voluptates vitae aspernatur soluta cupiditate non quis in
                     qui quas deserunt consequatur.</p>
-            </div>
         </div>
         <!--fim row-->
     </main>
@@ -122,12 +121,14 @@
 
         <!--4 cta inicio-->
         <div class="contato-link vh-50 d-flex align-items-center justify-content-center flex-column">
-            <p class="col-md-5 big-p text-center contato-link-texto">Juntos vamos entender e estudar oportunidades e
-                obstáculos para alcançar
+            <p id="cta-texto" class="col-md-8 col-lg-5 big-p text-center contato-link-texto"
+                onmouseover="ctaAparece(ctalink), addClass('cta-texto', 'pointer')">Juntos vamos entender e estudar
+                oportunidades e obstáculos para
+                alcançar
                 os
                 objetivos previstos.</p>
-            <div class="col-md-10 text-end">
-                <a class="mt-2 bigger-p text-end" href="#">Bora conversar?</a>
+            <div class="col-md-9 text-end">
+                <a id="ctalink" class="mt-2 bigger-p text-end" href="#">Bora conversar?</a>
             </div>
         </div>
         <!--cta fim-->

@@ -163,3 +163,26 @@ function stopVideo(x) {
     delClass(x, 'videoslideon');
     addClass(x, 'videoslide')
 }
+
+// abre o texto descritivo de serviços
+
+function abreTextoServico(x) {
+    delClass(`${x}textoup`, 'div-hidden');
+    addClass(`${x}textoup`, 'slideup');
+    delClass(`${x}textodown`, 'div-hidden');
+}
+
+function reabreTextoServico(x) {
+    delClass(`${x}textodown`, 'd-none');
+    delClass(`${x}textoup`, 'd-none');
+    addClass(`reabre${x}textoup`, 'd-none')
+    addClass(`reabre${x}textodown`, 'd-none')
+}
+
+function fechaTextoServico(x) {
+    addClass(`${x}textoup`, 'd-none');
+    delClass(`${x}textoup`, 'slideup');
+    addClass(`${x}textodown`, 'd-none');
+    delClass(`reabre${x}textoup`, 'd-none')
+    delClass(`reabre${x}textodown`, 'd-none')
+}

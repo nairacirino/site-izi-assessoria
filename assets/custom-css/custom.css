@@ -471,18 +471,18 @@ header {
     color: var(--roxo) !important;
 }
 
-#imgFotografiaDiv {
+.imgServicosDiv {
     height: 195px;
     overflow: hidden;
 }
 
-#imgFotografia {
+.imgServicos {
     object-fit: cover;
     object-position: center;
     filter: grayscale(100%);
 }
 
-#imgFotografia:hover {
+.imgServicos:hover {
     filter: grayscale(0%);
 }
 
@@ -1039,25 +1039,25 @@ header {
 
 .slidectaup {
     animation-name: slidectaup;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-delay: .5s;
 
     -moz-animation-name: slidectaup;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: .5s;
     -moz-animation-timing-function: ease-in;
     -moz-animation-fill-mode: forwards;
     -moz-animation-delay: .5s;
 
     -webkit-animation-name: slidectaup;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: .5s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-delay: .5s;
 
     -o-animation-name: slidectaup;
-    -o-animation-duration: 1s;
+    -o-animation-duration: .5s;
     -o-animation-timing-function: ease-in;
     -o-animation-fill-mode: forwards;
     -o-animation-delay: .5s;

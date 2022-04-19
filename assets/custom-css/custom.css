@@ -290,7 +290,13 @@ header {
 
 @media (max-width: 767px) {
     .hero {
-        height: 92vh;
+        height: 85vh;
+    }
+
+    .videocover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -307,10 +313,6 @@ header {
 }
 
 /* home projetos */
-
-.home-projetos {
-    min-height: 99vh;
-}
 
 @media (max-width: 767px) {
     .home-projetos {
@@ -402,6 +404,9 @@ header {
 .video-div {
     height: 400px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* home infoblog */
@@ -655,7 +660,7 @@ header {
 
     .video-div {
         height: 250px;
-        margin-bottom: 2rem;
+        margin: 5rem 0;
     }
 
     .servicos h2 {
@@ -933,12 +938,12 @@ header {
     opacity: 1;
 }
 
-.div-hidden{
+.div-hidden {
     transition: all 2s ease;
     height: 0;
     opacity: 0;
     overflow: hidden;
-} 
+}
 
 .textfhidden {
     transition: all 2s ease;

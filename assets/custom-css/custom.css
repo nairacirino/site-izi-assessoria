@@ -664,7 +664,7 @@ header {
     }
 
     .servicos h2 {
-        font-size: clamp(3rem, calc(3.5rem + 3.5vw), 70px);
+        font-size: clamp(3rem, calc(3.5rem + 3.5vw), 60px);
         text-transform: uppercase;
     }
 
@@ -732,8 +732,10 @@ header {
         justify-content: space-between;
     }
 
-    .servicos {
-        margin-top: 5rem;
+    .servicosmobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .mais-projetos, .div1 {

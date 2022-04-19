@@ -578,7 +578,11 @@ header {
         text-align: center;
     }
 
-    #imgFotografia {
+.itemindividual {
+    margin-top: 5rem;
+}
+
+    .imgServicos {
         height: 100%;
         width: auto;
     }

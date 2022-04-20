@@ -496,7 +496,8 @@ header {
     top: clamp(3rem, calc(3.5rem + 3.5vw), 6rem);
     filter: grayscale(0%) !important;
     bottom: 0;
-    background-color: var(--roxo);
+    background: linear-gradient(180deg, rgba(54,107,183,0.6) 5%, rgba(159,12,132,0.6) 50%, rgba(37,73,125,0.02) 90%);
+    opacity: .35;
 }
 
 .quadrado-sobre {
@@ -520,6 +521,12 @@ header {
     margin: 0 auto;
     filter: grayscale(0%) !important;
     z-index: -1000;
+    height: fill-available;
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    height: -o-fill-available;
+    background: linear-gradient(180deg, rgba(54,107,183,0.6) 5%, rgba(159,12,132,0.6) 50%, rgba(37,73,125,0.02) 90%);
+    opacity: .35;
 }
 
 /* infoblog */

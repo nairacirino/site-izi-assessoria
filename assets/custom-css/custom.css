@@ -294,7 +294,7 @@ header {
     }
 
     .videocover {
-        height: 100%;
+        height: 50%;
         width: 100%;
         object-fit: cover;
     }
@@ -483,6 +483,7 @@ header {
 
 .imgServicos {
     object-fit: cover;
+    width: 100%;
     object-position: center;
     filter: grayscale(100%);
 }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo-->
+    <title>Izi Assessoria</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!--font-face css-->
+    <link rel="stylesheet" href="./assets/custom-css/fontface.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/custom-css/custom.css">
+    <!--fontawesome icons-->
+    <script src="https://kit.fontawesome.com/5e6a5b3ca8.js" crossorigin="anonymous"></script>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./assets/media/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/media/img/favicon/favicon.ico" type="image/x-icon">
+    <!--google fonts-->
+
+</head>
+
+<body>
+    <!--1 barra de navegação inicio -->
+    <!--header inicio-->
+    <header id="navbar" class="d-none d-md-block mb-10 mt-5 mt-md-0">
+        <!--barra de navegação expandida-->
+        <nav>
+            <ul class="navtopo d-none d-md-flex nav justify-content-around align-items-end">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">
+                        <img id="logo-expandido" class="img-fluid logo-topo"
+                            src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa"
+                            onmouseover="trocaLogo('logo-expandido')" onmouseout="destrocaLogo('logo-expandido')">
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="infoblog.html">Infoblog</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">O que é Izi</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fim barra de navegacao expandida-->
+    <!--dropdown inicio-->
+    <nav>
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="d-md-none d-lg-none" href="#">
+                <img id="logo-dropdown" class="img-fluid logo-topo pb-3"
+                    src="./assets/media/img/logo/logo-nav-topo-b.png" alt="logo da empresa"
+                    onmouseover="trocaLogo('logo-dropdown')" onmouseout="destrocaLogo('logo-dropdown')">
+            </a>
+            <div class="dropdown mt-2">
+                <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa-solid fa-bars"></i></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="servicos.html">Serviços</a></li>
+                    <li><a class="dropdown-item" href="projetos.html">Projetos</a></li>
+                    <li><a class="dropdown-item" href="infoblog.html">Infoblog</a></li>
+                    <li><a class="dropdown-item" href="sobre.html">O que é Izi</a></li>
+                    <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--dropdown fim-->
+    <!--fim barra de navegação-->
+
+    <!--2 hero inicio-->
+    <section class="hero">
+        <div class="d-none d-md-block d-lg-block square-gradient col-md-6 video-div">
+            <video autoplay muted loop class="bg-home-video">
+                <source src="./assets/media/video/video-home-resized.webm" type="video/webm">
+                <source src="./assets/media/video/video-home-resized.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1 class="col-md-10 text-center me-3 ms-3">Um jeito mais fácil<br>de ver as coisas</h1>
+    </section>
+    <!-- fim hero -->
+
+
+    <main>
+        <!--3 projetos inicio-->
+        <section class="home-projetos home-projetos-xs">
+            <div class="imagens-projetos imagens-projetos-xs d-flex justify-content-between flex-wrap">
+                <figure class="col-12 col-md-4 md-3 position-relative">
+                    <a href="#" class="projeto-img-esquerda-container homeprojeto-img-container">
+                        <img id="img1" class="projeto-img"
+                            src="./assets/media/img/home/Home-fotografia-ladoesquerdo.webp" alt=""
+                            onmouseover="colorImg(img1)" onmouseout="pbImg(img1)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img1)"
+                        onmouseout="pbImg(img1)"><a class="pe-5" href="">fotografia</a>
+                    </figcaption>
+                </figure>
+                <figure class="col-12 col-md-4 position-relative">
+                    <a href="#" class="projeto-img-meio-container homeprojeto-img-container">
+                        <img id="img2" class="projeto-img" src="./assets/media/img/home/home-socialmedia-centro.webp"
+                            alt="" onmouseover="colorImg(img2)" onmouseout="pbImg(img2)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img2)"
+                        onmouseout="pbImg(img2)"><a class="pe-5" href="">social media</a>
+                    </figcaption>
+                </figure>
+                <figure class="col-12 col-md-4 position-relative">
+                    <a href="#" class="projeto-img-direita-container homeprojeto-img-container">
+                        <img id="img3" class="projeto-img" src="./assets/media/img/home/Home-branding-direito.webp"
+                            alt="" onmouseover="colorImg(img3)" onmouseout="pbImg(img3)"></a>
+                    <figcaption class="position-absolute bottom-0 d-flex" onmouseover="colorImg(img3)"
+                        onmouseout="pbImg(img3)"><a class="pe-5" href="">branding</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div
+                class="margem-padrao titulos-projeto titulos-projeto-xs d-flex justify-content-between align-items-end position-relative flex-wrap">
+                <h2>Projetos</h2>
+                <a class="pb-1 underline-hover" href="">portfólio completo</a>
+            </div>
+        </section>
+        <!--fim projetos-->
+
+        <!--4 video institucional inicio-->
+        <section class="video position-relative embed-responsive embed-responsive-21by9 vw-100 mw-100">
+            <h2 class="d-none">
+                video institucional
+            </h2>
+            <div class="video-div vh-100">
+                <video class="embed-responsive-item w-100 mw-100 videocover" controls autoplay loop muted>
+                    <source src="./assets/media/video/videohome.webm" type="video/webm">
+                    <source src="./assets/media/video/videohome.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+        </section>
+        <!--fim video institucional-->
+
+        <!--5 infoblog inicio-->
+        <section class="home-infoblog pt-8 position-relative mb-6">
+            <div class="wrap-div">
+                <div class="circulo-gradient position-absolute top-0 end-0 me-4"></div>
+                <h2 class="text-end margem-padrao">Infoblog</h2>
+                <div class="images-infoblog d-flex justify-content-between mt-3 margem-padrao flex-wrap">
+                    <figure class="col-md-5 col-lg-2 mb-5">
+                        <img class="img-fluid" src="./assets/media/img/home/home-socialmedia-centro.webp" alt="">
+                        <figcaption class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit, sedd
+                        </figcaption>
+                    </figure>
+                    <figure class="col-md-5 col-lg-2 mb-5">
+                        <img class="img-fluid" src="./assets/media/img/home/home-socialmedia-centro.webp" alt="">
+                        <figcaption class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit, sedd
+                        </figcaption>
+                    </figure>
+                    <figure class="col-md-5 col-lg-2 mb-5">
+                        <img class="img-fluid" src="./assets/media/img/home/home-socialmedia-centro.webp" alt="">
+                        <figcaption class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit, sedd
+                        </figcaption>
+                    </figure>
+                    <figure class="col-md-5 col-lg-2  mb-5">
+                        <img class="img-fluid" src="./assets/media/img/home/home-socialmedia-centro.webp" alt="">
+                        <figcaption class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit, sedd
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--infoblog fim-->
+
+    </main>
+
+    <!--6 e 7 call to action de contato inicio-->
+    <section class="cta-contato margem-padrao">
+        <div class="tres-linhas">
+            <h3>Inclusão</h3>
+            <h3 class="homerespeito"><img id="faixarespeito" class="img-fluid"
+                    src="./assets/media/img/faixarespeito.png" alt=""> Respeito</h3>
+            <h3>Diversidade</h3>
+        </div>
+        <div class="contato-link vh-100 d-flex align-items-center justify-content-center flex-column">
+            <p id="cta-texto" class="col-md-8 col-lg-5 big-p text-center contato-link-texto"
+                onmouseover="ctaAparece(ctalink), addClass('cta-texto', 'pointer')">Juntos vamos entender e estudar
+                oportunidades e obstáculos para
+                alcançar
+                os
+                objetivos previstos.</p>
+            <div class="col-md-9 text-end">
+                <a id="ctalink" class="mt-2 bigger-p text-end" href="#">Bora conversar?</a>
+            </div>
+        </div>
+    </section>
+    <!--call to action de contato fim-->
+
+    <!--8 rodapé inicio-->
+    <footer class="margem-padrao">
+        <p>contato@iziassessoria.com</p>
+        <p>São Paulo - SP</p>
+        <small>Todos os direitos reservados*</small>
+        <nav>
+            <ul class="d-flex mt-2">
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="social-bg me-3"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!--fim rodapé-->
+
+    <!--ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="./assets/custom-js/custom.js" defer></script>
+</body>
+
+</html>

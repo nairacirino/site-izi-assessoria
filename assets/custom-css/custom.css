@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(3rem, calc(3.5rem + 3.5vw), 6rem);
+    font-size: clamp(3rem, calc(3.5rem + 3.5vw), 10rem);
     text-transform: uppercase;
 }
 

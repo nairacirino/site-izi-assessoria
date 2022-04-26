@@ -1173,7 +1173,11 @@ header {
     padding-top: 30vh;
 }
 
-.infoblog-hero, .infostart {
+.infoblog-hero {
+    padding-top: 25vh;
+}
+
+.infostart {
     padding-top: 30vh;
 }
 

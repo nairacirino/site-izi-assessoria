@@ -1155,12 +1155,21 @@ header {
     object-fit: cover;
 }
 
-.servicosheroh2, .servicosstart {
+.nohover {
+    text-decoration: none;
+    color: var(--white) !important;
+}
+
+.nohover:hover {
+    color: var(--white) !important;
+}
+
+.servicosheroh2, .servicosstart, .infoblog-hero, .infostart {
     padding-top: 30vh;
 }
 
 @media (min-width: 768px) {
-    .servicosheroh2, .servicosstart {
+    .servicosheroh2, .servicosstart, .infoblog-hero, .infostart {
         padding-top: 40vh;
     }
 }

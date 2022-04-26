@@ -1156,5 +1156,11 @@ header {
 }
 
 .servicosheroh2, .servicosstart {
-    padding-top: 40vh;
+    padding-top: 30vh;
+}
+
+@media (min-width: 768px) {
+    .servicosheroh2, .servicosstart {
+        padding-top: 40vh;
+    }
 }

@@ -536,7 +536,12 @@ header {
     filter: grayscale(0%) !important;
     z-index: -1000;
     width: clamp(9rem, calc(11rem + 11vw), 18rem);
-    margin-left: 5rem;
+}
+
+@media (min-width: 768px) {
+    .circulo-infoblog {
+        margin-left: 5rem;
+    }
 }
 
 /* artigo */

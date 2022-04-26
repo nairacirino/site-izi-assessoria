@@ -1169,12 +1169,20 @@ header {
     color: var(--white) !important;
 }
 
-.servicosheroh2, .servicosstart, .infoblog-hero, .infostart {
+.servicosheroh2, .servicosstart {
     padding-top: 30vh;
 }
 
+.infoblog-hero, .infostart {
+    padding-top: 20vh;
+}
+
 @media (min-width: 768px) {
-    .servicosheroh2, .servicosstart, .infoblog-hero, .infostart {
+    .servicosheroh2, .servicosstart {
         padding-top: 40vh;
+    }
+    
+    .infoblog-hero, .infostart {
+        padding-top: 30vh;
     }
 }

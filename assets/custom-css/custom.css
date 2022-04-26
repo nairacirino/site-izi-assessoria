@@ -1179,6 +1179,10 @@ header {
     padding-top: 25vh;
 }
 
+.herosobre, .sobrestart {
+    padding-top: 15vh;
+}
+
 .infostart {
     padding-top: 30vh;
 }

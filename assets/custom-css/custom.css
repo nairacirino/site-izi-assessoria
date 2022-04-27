@@ -1188,7 +1188,7 @@ header {
 }
 
 @media (min-width: 768px) {
-    .servicosheroh2, .servicosstart {
+    .servicosheroh2, .servicosstart, .herosobre, .sobrestart {
         padding-top: 40vh;
     }
 

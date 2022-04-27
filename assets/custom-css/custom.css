@@ -1181,6 +1181,7 @@ header {
 
 .herosobre, .sobrestart {
     padding-top: 15vh;
+    min-height: 75vh;
 }
 
 .infostart {
